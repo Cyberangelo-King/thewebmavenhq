@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | The Web Maven</title>
+  <meta name="description" content="Start a website project with The Web Maven. Message Faith directly or send a project inquiry through the Netlify-ready contact form." />
+  <meta property="og:title" content="Contact | The Web Maven" />
+  <meta property="og:description" content="Book a discovery call for a strategic website, ecommerce site, landing page, or authority platform." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;650;750;850;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animations.css" />
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="The Web Maven home">
+      <span class="brand__mark">W<span class="brand__dot"></span></span>
+      <span class="brand__text">THE WEB MAVEN</span>
+    </a>
+    <div class="nav__links" id="site-menu">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a class="active" href="contact.html">Contact</a>
+    </div>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="https://wa.me/2348079617768?text=Hi%20Faith%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-hero">
+      <div class="container page-hero__grid">
+        <div>
+          <p class="eyebrow" data-reveal>Start your digital project</p>
+          <h1 data-reveal data-delay="80">Let us make the next step clear.</h1>
+        </div>
+        <p class="lead" data-reveal data-delay="160">Before we talk about design, we talk about your business: your goals, your audience, your current website, and what a successful project should change.</p>
+      </div>
+    </header>
+
+    <section class="section section--tight">
+      <div class="container contact-grid">
+        <aside class="contact-panel" data-reveal>
+          <p class="eyebrow">Preferred channel</p>
+          <h2>Message Faith directly.</h2>
+          <p class="lead">No account managers. No vague quote forms. You speak directly with the person shaping the strategy, interface, and final website experience.</p>
+
+          <div class="contact-methods">
+            <a class="contact-method" href="https://wa.me/2348079617768?text=Hi%20Faith%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener noreferrer">
+              <span class="contact-method__icon">WA</span>
+              <span><strong>WhatsApp</strong><span>+234 807 961 7768</span></span>
+            </a>
+            <a class="contact-method" href="mailto:faithakinboyejo@gmail.com">
+              <span class="contact-method__icon">@</span>
+              <span><strong>Email</strong><span>faithakinboyejo@gmail.com</span></span>
+            </a>
+            <div class="contact-method">
+              <span class="contact-method__icon">24</span>
+              <span><strong>Response window</strong><span>Within 24 hours, usually same day.</span></span>
+            </div>
+          </div>
+        </aside>
+
+        <section class="form-panel" data-reveal data-delay="120" aria-labelledby="project-form-heading">
+          <p class="eyebrow">Project inquiry</p>
+          <h2 id="project-form-heading" style="font-size: clamp(30px, 4vw, 48px); margin: 16px 0 22px;">Tell me what you are building.</h2>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none" aria-hidden="true"><label>Do not fill this out: <input name="bot-field" /></label></p>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Faith Akinboyejo" />
+              </div>
+              <div class="field">
+                <label for="business">Business name</label>
+                <input id="business" name="business" type="text" autocomplete="organization" placeholder="Your company" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              </div>
+              <div class="field">
+                <label for="phone">WhatsApp number</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+234..." />
+              </div>
+              <div class="field field--full">
+                <label for="project">Project type</label>
+                <select id="project" name="project-type" required>
+                  <option value="">Select one</option>
+                  <option>Authority website</option>
+                  <option>Lead generation website</option>
+                  <option>Ecommerce website</option>
+                  <option>Landing page</option>
+                  <option>Website redesign</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="message">What should this website help your business achieve?</label>
+                <textarea id="message" name="message" required placeholder="Tell me about your goals, audience, current challenge, timeline, and any website you admire."></textarea>
+              </div>
+            </div>
+
+            <p class="form-note">This form is ready for Netlify Forms. You can also skip it and start on WhatsApp.</p>
+            <button class="btn btn--primary" type="submit">Send Project Inquiry</button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta" data-reveal>
+          <p class="eyebrow">What happens next</p>
+          <h2>A short strategy conversation, then a clear build path.</h2>
+          <p>I will review your message, ask the right follow-up questions, and help define scope, timeline, and the business outcomes your website should support.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="https://wa.me/2348079617768?text=Hi%20Faith%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+            <a class="btn btn--ghost" href="work.html">Review Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">W<span class="brand__dot"></span></span>
+        <span class="brand__text">THE WEB MAVEN</span>
+      </a>
+      <p>© <span data-year></span> The Web Maven. Strategic websites that build trust and generate opportunities.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

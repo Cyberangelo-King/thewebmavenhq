@@ -1,0 +1,40 @@
+/* Supplemental animation utilities for The Web Maven */
+.page-enter {
+  animation: page-enter 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.magnetic {
+  transform: translateZ(0);
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link-arrow::after {
+  content: "->";
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.link-arrow:hover::after {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter {
+    animation: none;
+  }
+}
