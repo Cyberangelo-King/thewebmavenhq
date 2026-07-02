@@ -736,6 +736,7 @@ p { color: var(--muted-color); }
 .process-step p  { margin-top: 12px; }
 
 /* ─── CTA ─────────────────────────────────────────────────────────────── */
+/* Background image removed — solid dark gradient for security and performance */
 .cta {
   position: relative;
   padding: clamp(56px, 8vw, 96px);
@@ -743,12 +744,8 @@ p { color: var(--muted-color); }
   border-radius: var(--radius-xl);
   color: var(--brand-white);
   background:
-    linear-gradient(135deg, var(--line-strong), rgba(15,15,15,0.96)),
-    image-set(
-      url("Works/optimized/screencapture-the-web-maven-local-2026-05-10-20_02_35.webp") type("image/webp"),
-      url("Works/screencapture-the-web-maven-local-2026-05-10-20_02_35.png") type("image/png")
-    ) center top / cover;
-  background-blend-mode: multiply;
+    linear-gradient(135deg, rgba(30,20,5,0.98), rgba(15,15,15,0.99)),
+    var(--brand-black);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
 }
@@ -1169,6 +1166,7 @@ p { color: var(--muted-color); }
 }
 .footer__links {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .footer__links a {

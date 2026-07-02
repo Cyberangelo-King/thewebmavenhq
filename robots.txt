@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /The Web Maven/
+Disallow: /Works/optimized/
+Disallow: /.well-known/
+
+Allow: /.well-known/security.txt
+
+Sitemap: https://Cyberangelo-King.github.io/thewebmavenhq/sitemap.xml

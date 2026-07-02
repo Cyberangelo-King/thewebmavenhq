@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; form-action 'none'; base-uri 'self';" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()" />
+  <title>Cookie Policy | The Web Maven</title>
+  <meta name="description" content="Cookie Policy for The Web Maven — how and why we use cookies and localStorage on this website." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;650;750;850;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .legal-page { padding: calc(var(--nav-height) + 80px) 0 clamp(60px, 10vw, 120px); }
+    .legal-content { max-width: 780px; margin-inline: auto; }
+    .legal-content h1 { font-size: clamp(36px, 5vw, 64px); margin-top: 20px; }
+    .legal-content h2 { font-size: clamp(20px, 2.4vw, 28px); margin-top: 48px; margin-bottom: 16px; }
+    .legal-content h3 { font-size: clamp(17px, 1.8vw, 21px); margin-top: 32px; margin-bottom: 12px; }
+    .legal-content p, .legal-content li { font-size: 16px; line-height: 1.75; margin-top: 12px; color: var(--body-color); }
+    .legal-content ul { list-style: disc; padding-left: 24px; margin-top: 12px; }
+    .legal-content ul li { margin-top: 6px; }
+    .legal-content a { color: var(--brand-gold); text-decoration: underline; }
+    .legal-meta { margin-top: 8px; font-size: 14px; color: var(--muted-color); }
+    .cookie-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 14px; }
+    .cookie-table th { background: var(--surface-card); text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+    .cookie-table td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    code { background: var(--surface-card); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="The Web Maven home">
+      <span class="brand__mark">W<span class="brand__dot"></span></span>
+      <span class="brand__text">THE WEB MAVEN</span>
+    </a>
+    <div class="nav__links" id="site-menu">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav__actions">
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="legal-page">
+      <div class="container legal-content">
+        <p class="eyebrow">Legal</p>
+        <h1>Cookie Policy</h1>
+        <p class="legal-meta">Last updated: 2 July 2026 &nbsp;|&nbsp; Effective: 2 July 2026</p>
+
+        <p>This Cookie Policy explains how The Web Maven ("we", "us", "our") uses cookies and similar technologies on this website. We believe in transparency — so this page is short, plain-language, and complete.</p>
+
+        <h2>Do We Use Cookies?</h2>
+        <p><strong>We do not set any HTTP cookies on your device.</strong> This website does not use advertising cookies, analytics cookies, tracking pixels, or third-party cookies of any kind.</p>
+
+        <h2>What We Do Use: localStorage</h2>
+        <p>We use a single <code>localStorage</code> entry in your browser to remember your display preference (dark or light mode). This is not a cookie — it is stored locally in your browser and is never transmitted to any server.</p>
+
+        <table class="cookie-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Purpose</th>
+              <th>Expires</th>
+              <th>Third Party?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>theme</code></td>
+              <td>localStorage</td>
+              <td>Stores your dark/light mode preference ("dark" or "light")</td>
+              <td>Persists until cleared</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Third-Party Services That May Set Cookies</h2>
+
+        <h3>Google Fonts</h3>
+        <p>This website loads fonts (Inter and Playfair Display) from Google Fonts. When your browser requests a font file, Google's servers may log the request including your IP address. Google may set cookies or use local storage in connection with this request. We do not control Google's cookie behaviour.</p>
+        <p>Reference: <a href="https://fonts.google.com/about" target="_blank" rel="noopener noreferrer">Google Fonts privacy FAQ</a></p>
+
+        <h3>GitHub Pages (Hosting)</h3>
+        <p>This site is hosted on GitHub Pages (github.com). GitHub may set cookies or log request data as part of their infrastructure. We do not control GitHub's cookie behaviour.</p>
+        <p>Reference: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a></p>
+
+        <h3>Formspree (Contact Form)</h3>
+        <p>When you submit our contact form, your data is processed by Formspree. Formspree may set cookies to prevent spam (CSRF protection). We do not control Formspree's cookie behaviour.</p>
+        <p>Reference: <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Formspree Privacy Policy</a></p>
+
+        <h2>How to Control or Clear Storage</h2>
+        <p>To clear the <code>theme</code> localStorage value:</p>
+        <ul>
+          <li><strong>Chrome/Edge:</strong> DevTools → Application → Local Storage → delete the <code>theme</code> key</li>
+          <li><strong>Firefox:</strong> DevTools → Storage → Local Storage → delete the <code>theme</code> key</li>
+          <li><strong>Safari:</strong> Develop → Storage Inspector → Local Storage</li>
+          <li>Or simply: clear your browser's site data for this domain in your browser settings</li>
+        </ul>
+        <p>To block or manage cookies from Google or GitHub, you can use your browser's privacy settings or a browser extension such as uBlock Origin.</p>
+
+        <h2>Your Consent</h2>
+        <p>Because we do not set cookies, no consent banner is displayed. The <code>theme</code> localStorage value is set only after you click the theme toggle button — it is not set on page load without interaction.</p>
+        <p>If you would like to object to any storage, you can clear it at any time using the steps above.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If we ever introduce cookies in the future, we will update this policy, add a consent mechanism where required, and update the "Last updated" date above.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about this Cookie Policy should be directed to:</p>
+        <p>
+          <strong>Faith Akinola Boyejo (The Web Maven)</strong><br>
+          Email: <a href="mailto:faithakinboyejoa@gmail.com">faithakinboyejoa@gmail.com</a>
+        </p>
+
+        <p style="margin-top:32px;">
+          <a href="privacy-policy.html">&larr; Privacy Policy</a> &nbsp;&nbsp;
+          <a href="terms-of-service.html">Terms of Service &rarr;</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">W<span class="brand__dot"></span></span>
+        <span class="brand__text">THE WEB MAVEN</span>
+      </a>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+        <a href="cookie-policy.html">Cookies</a>
+      </nav>
+      <p>&copy; <span data-year></span> The Web Maven. Strategic websites that build trust, generate opportunities, and support business growth.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
