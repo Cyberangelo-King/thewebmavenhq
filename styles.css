@@ -736,16 +736,13 @@ p { color: var(--muted-color); }
 .process-step p  { margin-top: 12px; }
 
 /* ─── CTA ─────────────────────────────────────────────────────────────── */
-/* Background image removed — solid dark gradient for security and performance */
 .cta {
   position: relative;
   padding: clamp(56px, 8vw, 96px);
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-xl);
   color: var(--brand-white);
-  background:
-    linear-gradient(135deg, rgba(30,20,5,0.98), rgba(15,15,15,0.99)),
-    var(--brand-black);
+  background: linear-gradient(135deg, #1a1008 0%, #0f0f0f 60%, #14100a 100%);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
 }
@@ -1166,7 +1163,6 @@ p { color: var(--muted-color); }
 }
 .footer__links {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 .footer__links a {
