@@ -2,7 +2,7 @@
 
 document.documentElement.classList.add("js");
 
-/* ─── NAV SCROLL STATE ──────────────────────────────────────────────── */
+/* ─── NAV SCROLL STATE ────────────────────────────────────────────────────── */
 (function () {
   var nav = document.querySelector(".nav");
   if (!nav) return;
@@ -15,7 +15,7 @@ document.documentElement.classList.add("js");
   window.addEventListener("scroll", setState, { passive: true });
 })();
 
-/* ─── MOBILE MENU TOGGLE ────────────────────────────────────────────── */
+/* ─── MOBILE MENU TOGGLE ──────────────────────────────────────────────────── */
 (function () {
   var toggle = document.querySelector(".nav__toggle");
   var links  = document.querySelector(".nav__links");
@@ -42,7 +42,7 @@ document.documentElement.classList.add("js");
   });
 })();
 
-/* ─── HERO WORD ANIMATION ───────────────────────────────────────────── */
+/* ─── HERO WORD ANIMATION ────────────────────────────────────────────────────── */
 (function () {
   var words = document.querySelectorAll(".word");
   words.forEach(function (word, index) {
@@ -52,7 +52,7 @@ document.documentElement.classList.add("js");
   });
 })();
 
-/* ─── SCROLL REVEAL ─────────────────────────────────────────────────── */
+/* ─── SCROLL REVEAL ─────────────────────────────────────────────────────── */
 (function () {
   var revealEls = document.querySelectorAll("[data-reveal]");
   if (!revealEls.length) return;
@@ -77,14 +77,14 @@ document.documentElement.classList.add("js");
   });
 })();
 
-/* ─── TICKER DUPLICATION ────────────────────────────────────────────── */
+/* ─── TICKER DUPLICATION ────────────────────────────────────────────────────── */
 (function () {
   var ticker = document.querySelector(".ticker");
   if (!ticker) return;
   ticker.innerHTML += ticker.innerHTML;
 })();
 
-/* ─── PORTFOLIO FILTER ──────────────────────────────────────────────── */
+/* ─── PORTFOLIO FILTER ─────────────────────────────────────────────────────── */
 (function () {
   var buttons = document.querySelectorAll("[data-filter]");
   var items   = document.querySelectorAll("[data-category]");
@@ -112,14 +112,14 @@ document.documentElement.classList.add("js");
   });
 })();
 
-/* ─── YEAR FILL ─────────────────────────────────────────────────────── */
+/* ─── YEAR FILL ─────────────────────────────────────────────────────────── */
 (function () {
   var yearEls = document.querySelectorAll("[data-year]");
   var year = new Date().getFullYear();
   yearEls.forEach(function (el) { el.textContent = year; });
 })();
 
-/* ─── THEME TOGGLE ──────────────────────────────────────────────────── */
+/* ─── THEME TOGGLE ─────────────────────────────────────────────────────── */
 (function () {
   var themeToggle = document.querySelector(".theme-toggle");
   if (!themeToggle) return;
@@ -143,7 +143,7 @@ document.documentElement.classList.add("js");
   });
 })();
 
-/* ─── MOUSE PARALLAX ────────────────────────────────────────────────── */
+/* ─── MOUSE PARALLAX ────────────────────────────────────────────────────── */
 (function () {
   var body = document.body;
   if (!body) return;
@@ -160,22 +160,14 @@ document.documentElement.classList.add("js");
   }, { passive: true });
 })();
 
-/* ─── CONTACT FORM ──────────────────────────────────────────────────── */
+/* ─── CONTACT FORM ─────────────────────────────────────────────────────── */
 (function () {
   var form      = document.getElementById("contact-form");
   var success   = document.getElementById("form-success");
   var submitBtn = document.getElementById("submit-btn");
   if (!form) return;
 
-  /* Show success if redirected back with ?success=true */
-  if (window.location.search.indexOf("success=true") !== -1) {
-    if (form)    form.style.display    = "none";
-    if (success) success.classList.add("visible");
-    // Clean the URL without reloading
-    if (history.replaceState) {
-      history.replaceState(null, "", window.location.pathname);
-    }
-  }
+  var endpoint = form.getAttribute("data-formspree") || form.getAttribute("action");
 
   /* Inline validation helpers */
   function validateField(input) {
@@ -195,8 +187,25 @@ document.documentElement.classList.add("js");
     });
   });
 
-  /* Submit */
+  /* Helper: inline error message */
+  function clearSubmitError() {
+    var existing = form.querySelector(".form-submit-error");
+    if (existing) existing.remove();
+  }
+  function showSubmitError() {
+    clearSubmitError();
+    var err = document.createElement("p");
+    err.className = "form-submit-error";
+    err.setAttribute("role", "alert");
+    err.style.cssText = "margin-top:12px;color:#ef4444;font-size:14px;";
+    err.textContent = "Something went wrong \u2014 try WhatsApp or email directly.";
+    form.insertAdjacentElement("afterend", err);
+  }
+
+  /* Submit via AJAX fetch \u2014 user never leaves the page */
   form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
     var fields = form.querySelectorAll("input[required], textarea[required], select[required]");
     var allValid = true;
 
@@ -205,21 +214,42 @@ document.documentElement.classList.add("js");
     });
 
     if (!allValid) {
-      e.preventDefault();
       var firstError = form.querySelector(".error");
       if (firstError) firstError.focus();
       return;
     }
 
-    /* Show loading state */
-    if (submitBtn) {
-      var label   = submitBtn.querySelector(".submit-label");
-      var loading = submitBtn.querySelector(".submit-loading");
-      submitBtn.disabled = true;
-      if (label)   label.style.display   = "none";
-      if (loading) loading.style.display = "inline";
-    }
+    clearSubmitError();
 
-    /* Let Formspree handle the actual POST + redirect */
+    /* Loading state */
+    var label   = submitBtn ? submitBtn.querySelector(".submit-label")   : null;
+    var loading = submitBtn ? submitBtn.querySelector(".submit-loading") : null;
+    if (submitBtn) submitBtn.disabled = true;
+    if (label)   label.style.display   = "none";
+    if (loading) loading.style.display = "inline";
+
+    fetch(endpoint, {
+      method: "POST",
+      headers: { "Accept": "application/json" },
+      body: new FormData(form)
+    })
+    .then(function (response) {
+      if (response.ok) {
+        /* Success: hide form, show confirmation */
+        form.style.display = "none";
+        if (success) success.classList.add("visible");
+      } else {
+        showSubmitError();
+        if (submitBtn) submitBtn.disabled = false;
+        if (label)   label.style.display   = "";
+        if (loading) loading.style.display = "none";
+      }
+    })
+    ["catch"](function () {
+      showSubmitError();
+      if (submitBtn) submitBtn.disabled = false;
+      if (label)   label.style.display   = "";
+      if (loading) loading.style.display = "none";
+    });
   });
 })();
