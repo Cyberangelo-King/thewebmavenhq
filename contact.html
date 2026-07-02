@@ -4,11 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact | The Web Maven</title>
-  <meta name="description" content="Start a website project with The Web Maven. Message Faith directly or send a project inquiry through the Netlify-ready contact form." />
+  <meta name="description" content="Get in touch with The Web Maven. Start a project, book a discovery call, or just ask a question — via form, email, or WhatsApp." />
   <meta property="og:title" content="Contact | The Web Maven" />
-  <meta property="og:description" content="Book a discovery call for a strategic website, ecommerce site, landing page, or authority platform." />
+  <meta property="og:description" content="Start a project with The Web Maven. WhatsApp, email, or contact form — we respond within 24 hours." />
   <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;650;750;850;900&display=swap" rel="stylesheet" />
@@ -25,10 +24,15 @@
     <div class="nav__links" id="site-menu">
       <a href="index.html">Home</a>
       <a href="work.html">Work</a>
-      <a class="active" href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html" aria-current="page">Contact</a>
     </div>
     <div class="nav__actions">
-      <a class="btn btn--primary" href="https://wa.me/2348079617768?text=Hi%20Faith%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <a class="btn btn--primary" href="https://wa.me/2348079617768?text=Hi%20Angelo%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-menu">
         <span></span><span></span><span></span>
       </button>
@@ -36,98 +40,155 @@
   </nav>
 
   <main>
-    <header class="page-hero">
+    <section class="page-hero">
       <div class="container page-hero__grid">
         <div>
-          <p class="eyebrow" data-reveal>Start your digital project</p>
-          <h1 data-reveal data-delay="80">Let us make the next step clear.</h1>
+          <p class="eyebrow" data-reveal>Start a conversation</p>
+          <h1 data-reveal data-delay="80">Let's talk<br>business.</h1>
+          <p class="lead" data-reveal data-delay="150">Got a project in mind? Not sure what you need yet? Either way, reach out. The best website conversations start long before the first wireframe.</p>
         </div>
-        <p class="lead" data-reveal data-delay="160">Before we talk about design, we talk about your business: your goals, your audience, your current website, and what a successful project should change.</p>
-      </div>
-    </header>
-
-    <section class="section section--tight">
-      <div class="container contact-grid">
-        <aside class="contact-panel" data-reveal>
-          <p class="eyebrow">Preferred channel</p>
-          <h2>Message Faith directly.</h2>
-          <p class="lead">No account managers. No vague quote forms. You speak directly with the person shaping the strategy, interface, and final website experience.</p>
-
-          <div class="contact-methods">
-            <a class="contact-method" href="https://wa.me/2348079617768?text=Hi%20Faith%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener noreferrer">
-              <span class="contact-method__icon">WA</span>
-              <span><strong>WhatsApp</strong><span>+234 807 961 7768</span></span>
-            </a>
-            <a class="contact-method" href="mailto:faithakinboyejo@gmail.com">
-              <span class="contact-method__icon">@</span>
-              <span><strong>Email</strong><span>faithakinboyejo@gmail.com</span></span>
-            </a>
-            <div class="contact-method">
-              <span class="contact-method__icon">24</span>
-              <span><strong>Response window</strong><span>Within 24 hours, usually same day.</span></span>
-            </div>
+        <div data-reveal data-delay="200">
+          <div class="proof-pill">
+            <strong>24h</strong>
+            <span>Typical response window via WhatsApp or email</span>
           </div>
-        </aside>
-
-        <section class="form-panel" data-reveal data-delay="120" aria-labelledby="project-form-heading">
-          <p class="eyebrow">Project inquiry</p>
-          <h2 id="project-form-heading" style="font-size: clamp(30px, 4vw, 48px); margin: 16px 0 22px;">Tell me what you are building.</h2>
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact" />
-            <p style="display:none" aria-hidden="true"><label>Do not fill this out: <input name="bot-field" /></label></p>
-
-            <div class="form-grid">
-              <div class="field">
-                <label for="name">Your name</label>
-                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Faith Akinboyejo" />
-              </div>
-              <div class="field">
-                <label for="business">Business name</label>
-                <input id="business" name="business" type="text" autocomplete="organization" placeholder="Your company" />
-              </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
-              </div>
-              <div class="field">
-                <label for="phone">WhatsApp number</label>
-                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+234..." />
-              </div>
-              <div class="field field--full">
-                <label for="project">Project type</label>
-                <select id="project" name="project-type" required>
-                  <option value="">Select one</option>
-                  <option>Authority website</option>
-                  <option>Lead generation website</option>
-                  <option>Ecommerce website</option>
-                  <option>Landing page</option>
-                  <option>Website redesign</option>
-                </select>
-              </div>
-              <div class="field field--full">
-                <label for="message">What should this website help your business achieve?</label>
-                <textarea id="message" name="message" required placeholder="Tell me about your goals, audience, current challenge, timeline, and any website you admire."></textarea>
-              </div>
-            </div>
-
-            <p class="form-note">This form is ready for Netlify Forms. You can also skip it and start on WhatsApp.</p>
-            <button class="btn btn--primary" type="submit">Send Project Inquiry</button>
-          </form>
-        </section>
+        </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="cta" data-reveal>
-          <p class="eyebrow">What happens next</p>
-          <h2>A short strategy conversation, then a clear build path.</h2>
-          <p>I will review your message, ask the right follow-up questions, and help define scope, timeline, and the business outcomes your website should support.</p>
-          <div class="cta__actions">
-            <a class="btn btn--primary" href="https://wa.me/2348079617768?text=Hi%20Faith%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
-            <a class="btn btn--ghost" href="work.html">Review Work</a>
+    <section class="section section--tight">
+      <div class="container contact-grid">
+
+        <!-- ── Left panel: contact methods ── -->
+        <div class="contact-panel" data-reveal>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Four ways to reach Angelo.</h2>
+          <p class="lead">Pick the one that works for you. No phone trees. No ticketing systems. Just a direct line to the person doing the work.</p>
+
+          <div class="contact-methods" role="list">
+            <a class="contact-method" href="https://wa.me/2348079617768?text=Hi%20Angelo%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Contact via WhatsApp">
+              <div class="contact-method__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+234 807 961 7768 · Fastest response</span>
+              </div>
+            </a>
+
+            <a class="contact-method" href="mailto:faithakinboyejoa@gmail.com" role="listitem" aria-label="Send email to faithakinboyejoa@gmail.com">
+              <div class="contact-method__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <strong>Primary Email</strong>
+                <span>faithakinboyejoa@gmail.com</span>
+              </div>
+            </a>
+
+            <a class="contact-method" href="mailto:cyberangeloking@gmail.com" role="listitem" aria-label="Send email to cyberangeloking@gmail.com">
+              <div class="contact-method__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <strong>Secondary Email</strong>
+                <span>cyberangeloking@gmail.com</span>
+              </div>
+            </a>
+
+            <a class="contact-method" href="https://github.com/Cyberangelo-King" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="View GitHub profile">
+              <div class="contact-method__icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <strong>GitHub</strong>
+                <span>Cyberangelo-King · View open source work</span>
+              </div>
+            </a>
           </div>
         </div>
+
+        <!-- ── Right panel: form ── -->
+        <div class="form-panel" data-reveal data-delay="120">
+          <h3 style="font-size:clamp(22px,2.8vw,34px); margin-bottom:8px;">Send a message</h3>
+          <p style="font-size:14px; margin-bottom:24px;">Fill this in and we'll be back within 24 hours.</p>
+
+          <!-- Success state -->
+          <div class="form-success" id="form-success" aria-live="polite" role="status">
+            <h4>Message received!</h4>
+            <p>Angelo will get back to you within 24 hours. In the meantime, feel free to reach out directly on WhatsApp if it's urgent.</p>
+            <a href="https://wa.me/2348079617768?text=Hi%20Angelo%2C%20I%27d%20like%20to%20discuss%20a%20project." class="btn btn--primary" style="margin-top:16px; display:inline-flex;" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
+          </div>
+
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xpwzqjbg"
+            method="POST"
+            novalidate
+            aria-label="Project inquiry form"
+          >
+            <input type="hidden" name="_next" value="contact.html?success=true" />
+            <input type="hidden" name="_subject" value="New project inquiry — The Web Maven" />
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Your name <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="Faith Akinola" required aria-required="true" />
+                <span class="field-error" role="alert">Please enter your name.</span>
+              </div>
+
+              <div class="field">
+                <label for="email">Email address <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required aria-required="true" />
+                <span class="field-error" role="alert">Please enter a valid email address.</span>
+              </div>
+
+              <div class="field field--full">
+                <label for="project-type">What kind of project? <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+                <select id="project-type" name="project_type" required aria-required="true">
+                  <option value="" disabled selected>Select a project type…</option>
+                  <option value="Authority website">Authority / Personal brand website</option>
+                  <option value="Ecommerce website">Ecommerce website</option>
+                  <option value="Lead generation website">Lead generation website</option>
+                  <option value="Landing page">Landing page</option>
+                  <option value="SaaS / Web app">SaaS / Web application</option>
+                  <option value="Blog / Publishing">Blog / Publishing platform</option>
+                  <option value="School / EdTech portal">School / EdTech portal</option>
+                  <option value="AI/ML project">AI / Machine learning project</option>
+                  <option value="Other">Something else — I'll explain below</option>
+                </select>
+                <span class="field-error" role="alert">Please select a project type.</span>
+              </div>
+
+              <div class="field field--full">
+                <label for="budget">Approximate budget</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Select a range…</option>
+                  <option value="Under $500">Under $500</option>
+                  <option value="$500–$1,500">$500–$1,500</option>
+                  <option value="$1,500–$3,000">$1,500–$3,000</option>
+                  <option value="$3,000–$6,000">$3,000–$6,000</option>
+                  <option value="$6,000+">$6,000+</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="field field--full">
+                <label for="message">Tell me about your project <span aria-hidden="true" style="color:#ef4444;">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your business, what you need the website to do, your timeline, and any other relevant context…" required aria-required="true"></textarea>
+                <span class="field-error" role="alert">Please include a message.</span>
+              </div>
+            </div>
+
+            <p class="form-note">By submitting this form, you agree to be contacted by The Web Maven regarding your project inquiry. No spam — ever.</p>
+
+            <button class="btn btn--primary form-submit" type="submit" id="submit-btn">
+              <span class="submit-label">Send Message</span>
+              <span class="submit-loading" aria-hidden="true" style="display:none;">Sending…</span>
+            </button>
+          </form>
+        </div>
+
       </div>
     </section>
   </main>
@@ -138,7 +199,13 @@
         <span class="brand__mark">W<span class="brand__dot"></span></span>
         <span class="brand__text">THE WEB MAVEN</span>
       </a>
-      <p>© <span data-year></span> The Web Maven. Strategic websites that build trust and generate opportunities.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>© <span data-year></span> The Web Maven. Strategic websites that build trust, generate opportunities, and support business growth.</p>
     </div>
   </footer>
 

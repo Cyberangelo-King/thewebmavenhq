@@ -4,11 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Work | The Web Maven</title>
-  <meta name="description" content="Selected website projects from The Web Maven, including ecommerce, authority websites, landing pages, and service business platforms." />
+  <meta name="description" content="Portfolio of strategic web design projects by The Web Maven — ecommerce, authority sites, SaaS, AI/ML applications, and more." />
   <meta property="og:title" content="Work | The Web Maven" />
-  <meta property="og:description" content="Explore strategic website projects built around trust, clarity, conversion, and business growth." />
+  <meta property="og:description" content="Real builds with real business intent — 12+ projects spanning ecommerce, authority brands, SaaS, and AI/ML." />
   <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;650;750;850;900&display=swap" rel="stylesheet" />
@@ -24,11 +23,16 @@
     </a>
     <div class="nav__links" id="site-menu">
       <a href="index.html">Home</a>
-      <a class="active" href="work.html">Work</a>
+      <a class="active" href="work.html" aria-current="page">Work</a>
+      <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
     <div class="nav__actions">
-      <a class="btn btn--primary" href="https://wa.me/2348079617768?text=Hi%20Faith%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener noreferrer">Book a Call</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <a class="btn btn--primary" href="https://wa.me/2348079617768?text=Hi%20Angelo%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">Start a Project</a>
       <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-menu">
         <span></span><span></span><span></span>
       </button>
@@ -36,104 +40,316 @@
   </nav>
 
   <main>
-    <header class="page-hero">
+    <section class="page-hero">
       <div class="container page-hero__grid">
         <div>
-          <p class="eyebrow" data-reveal>Selected projects</p>
-          <h1 data-reveal data-delay="80">Evidence, not decoration.</h1>
-        </div>
-        <div data-reveal data-delay="160">
-          <p class="lead">Every project starts with a business challenge: build trust, improve clarity, sell online, generate inquiries, or turn campaign traffic into action.</p>
-          <div class="filter-bar" role="group" aria-label="Filter projects">
-            <button class="filter-btn active" type="button" data-filter="all">All</button>
-            <button class="filter-btn" type="button" data-filter="ecommerce">Ecommerce</button>
-            <button class="filter-btn" type="button" data-filter="authority">Authority</button>
-            <button class="filter-btn" type="button" data-filter="landing">Landing</button>
-            <button class="filter-btn" type="button" data-filter="service">Service</button>
+          <p class="eyebrow" data-reveal>Selected work</p>
+          <h1 data-reveal data-delay="80">Real builds.<br>Real intent.</h1>
+          <p class="lead" data-reveal data-delay="150">Every project starts with a business problem, not a Figma file. These are the sites we've built, the problems we solved, and the results that followed.</p>
+          <div class="filter-bar" role="group" aria-label="Filter projects by category">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            <button class="filter-btn" data-filter="ecommerce" type="button">Ecommerce</button>
+            <button class="filter-btn" data-filter="authority" type="button">Authority</button>
+            <button class="filter-btn" data-filter="tool" type="button">Tool / SaaS</button>
+            <button class="filter-btn" data-filter="blog" type="button">Blog</button>
+            <button class="filter-btn" data-filter="ai-ml" type="button">AI / ML</button>
+            <button class="filter-btn" data-filter="school" type="button">School Portal</button>
+            <button class="filter-btn" data-filter="service" type="button">Service</button>
           </div>
         </div>
-      </div>
-    </header>
-
-    <section class="section section--tight">
-      <div class="container portfolio-grid">
-        <article class="portfolio-item" data-category="ecommerce" data-reveal>
-          <div class="portfolio-item__media"><picture><source srcset="Works/optimized/screencapture-ayaba-store-local-2025-03-15-15_00_53.webp" type="image/webp" /><img src="Works/screencapture-ayaba-store-local-2025-03-15-15_00_53.png" alt="Ayaba Store ecommerce website screenshot" loading="lazy" /></picture></div>
-          <div class="portfolio-item__body">
-            <div class="work-card__meta"><span class="tag">Ecommerce</span><span class="tag">Retail</span></div>
-            <h3>Ayaba Store</h3>
-            <p>Product-led store interface built for browsing confidence, mobile shopping, and visual trust.</p>
+        <div data-reveal data-delay="200">
+          <div class="proof-pill">
+            <strong>13</strong>
+            <span>Projects shipped — ecommerce, authority, SaaS, and AI/ML</span>
           </div>
-        </article>
-
-        <article class="portfolio-item" data-category="authority" data-reveal data-delay="120">
-          <div class="portfolio-item__media"><picture><source srcset="Works/optimized/screencapture-dumbiricletus-netlify-app-2026-06-06-03_39_31.webp" type="image/webp" /><img src="Works/screencapture-dumbiricletus-netlify-app-2026-06-06-03_39_31.png" alt="Dumbiri Cletus website screenshot" loading="lazy" /></picture></div>
-          <div class="portfolio-item__body">
-            <div class="work-card__meta"><span class="tag">Authority</span><span class="tag">Personal Brand</span></div>
-            <h3>Dumbiri Cletus</h3>
-            <p>Authority platform designed to communicate expertise, credibility, and a clear next step.</p>
+          <div class="proof-pill" style="margin-top:12px;">
+            <strong>Global</strong>
+            <span>Clients in Nigeria, Canada, UK &amp; the United States</span>
           </div>
-        </article>
-        <article class="portfolio-item" data-category="authority" data-reveal>
-          <div class="portfolio-item__media"><picture><source srcset="Works/optimized/screencapture-demo-phlox-pro-coach-life-2025-08-19-11_30_54.webp" type="image/webp" /><img src="Works/screencapture-demo-phlox-pro-coach-life-2025-08-19-11_30_54.png" alt="Life coach website screenshot" loading="lazy" /></picture></div>
-          <div class="portfolio-item__body">
-            <div class="work-card__meta"><span class="tag">Authority</span><span class="tag">Coach</span></div>
-            <h3>Life Coach Platform</h3>
-            <p>Editorial, trust-led page architecture for coaches and experts selling transformation.</p>
-          </div>
-        </article>
-        <article class="portfolio-item" data-category="landing" data-reveal data-delay="60">
-          <div class="portfolio-item__media"><picture><source srcset="Works/optimized/screencapture-idyllic-conkies-fa1ed9-netlify-app-2026-05-29-17_06_39.webp" type="image/webp" /><img src="Works/screencapture-idyllic-conkies-fa1ed9-netlify-app-2026-05-29-17_06_39.png" alt="Landing page screenshot" loading="lazy" /></picture></div>
-          <div class="portfolio-item__body">
-            <div class="work-card__meta"><span class="tag">Landing</span><span class="tag">Campaign</span></div>
-            <h3>Campaign Landing Page</h3>
-            <p>Focused experience for a single conversion goal with clear hierarchy and strong pacing.</p>
-          </div>
-        </article>
-        <article class="portfolio-item" data-category="landing" data-reveal data-delay="120">
-          <div class="portfolio-item__media"><picture><source srcset="Works/optimized/screencapture-templates-animation-addons-prodo-2026-05-15-15_54_01.webp" type="image/webp" /><img src="Works/screencapture-templates-animation-addons-prodo-2026-05-15-15_54_01.png" alt="Animated template product website screenshot" loading="lazy" /></picture></div>
-          <div class="portfolio-item__body">
-            <div class="work-card__meta"><span class="tag">Landing</span><span class="tag">Product</span></div>
-            <h3>Animation Addons</h3>
-            <p>Product-style page presentation using visual rhythm, feature framing, and conversion cues.</p>
-          </div>
-        </article>
-        <article class="portfolio-item" data-category="service" data-reveal>
-          <div class="portfolio-item__media"><picture><source srcset="Works/optimized/screencapture-lwosocia-ng-2026-05-30-13_53_19.webp" type="image/webp" /><img src="Works/screencapture-lwosocia-ng-2026-05-30-13_53_19.png" alt="Lwosocia website screenshot" loading="lazy" /></picture></div>
-          <div class="portfolio-item__body">
-            <div class="work-card__meta"><span class="tag">Service</span><span class="tag">Business</span></div>
-            <h3>Lwosocia</h3>
-            <p>Service-business interface with fast scanning, strong first impression, and direct action paths.</p>
-          </div>
-        </article>
-        <article class="portfolio-item" data-category="service" data-reveal data-delay="60">
-          <div class="portfolio-item__media"><picture><source srcset="Works/optimized/screencapture-demo-phlox-pro-gym-2-2026-06-25-15_41_18.webp" type="image/webp" /><img src="Works/screencapture-demo-phlox-pro-gym-2-2026-06-25-15_41_18.png" alt="Gym website screenshot" loading="lazy" /></picture></div>
-          <div class="portfolio-item__body">
-            <div class="work-card__meta"><span class="tag">Service</span><span class="tag">Fitness</span></div>
-            <h3>Gym Website</h3>
-            <p>Energetic, CTA-forward service website structure for local lead generation.</p>
-          </div>
-        </article>
-        <article class="portfolio-item" data-category="landing" data-reveal data-delay="120">
-          <div class="portfolio-item__media"><picture><source srcset="Works/optimized/screencapture-i-hate-pdf-netlify-app-2025-07-18-16_44_04.webp" type="image/webp" /><img src="Works/screencapture-i-hate-pdf-netlify-app-2025-07-18-16_44_04.png" alt="PDF tool website screenshot" loading="lazy" /></picture></div>
-          <div class="portfolio-item__body">
-            <div class="work-card__meta"><span class="tag">Tool</span><span class="tag">Landing</span></div>
-            <h3>I Hate PDF</h3>
-            <p>A direct utility experience that prioritizes immediate task completion.</p>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
 
+    <section class="section section--tight">
+      <div class="container">
+        <div class="portfolio-grid" id="portfolio-grid">
+
+          <!-- 1. Ayaba Store — Ecommerce -->
+          <article class="portfolio-item" data-reveal data-category="ecommerce">
+            <div class="portfolio-item__media">
+              <picture>
+                <source srcset="Works/optimized/screencapture-ayaba-store-local-2025-03-15-15_00_53.webp" type="image/webp" />
+                <img src="Works/screencapture-ayaba-store-local-2025-03-15-15_00_53.png" alt="Ayaba Store ecommerce website" loading="lazy" />
+              </picture>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">Ecommerce</span><span class="tag">Retail</span></div>
+              <h3>Ayaba Store</h3>
+              <p>Full e-commerce platform for a fashion retail brand. Mobile-first buying experience with product discovery, trust signals, and a streamlined checkout path.</p>
+              <p class="portfolio-item__result">Clearer buying journey and stronger product presentation led to improved add-to-cart rates.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View Ayaba Store project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 2. Dumbiri Cletus — Authority -->
+          <article class="portfolio-item" data-reveal data-delay="60" data-category="authority">
+            <div class="portfolio-item__media">
+              <picture>
+                <source srcset="Works/optimized/screencapture-dumbiricluetus-netlify-app-2026-06-06-03_39_31.webp" type="image/webp" />
+                <img src="Works/screencapture-dumbiricluetus-netlify-app-2026-06-06-03_39_31.png" alt="Dumbiri Cletus authority website" loading="lazy" />
+              </picture>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">Authority</span><span class="tag">Personal Brand</span></div>
+              <h3>Dumbiri Cletus</h3>
+              <p>Credibility-first digital platform for a personal brand in professional services. Built to make expertise immediately visible and memorable to high-value clients.</p>
+              <p class="portfolio-item__result">Professional positioning that supports speaking, consulting, and partnership inquiries.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View Dumbiri Cletus project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 3. IHatePDF — Tool -->
+          <article class="portfolio-item" data-reveal data-delay="120" data-category="tool">
+            <div class="portfolio-item__media">
+              <picture>
+                <source srcset="Works/optimized/screencapture-i-hate-pdf-netlify-app-2026-01-06-13_43_11.webp" type="image/webp" />
+                <img src="Works/screencapture-i-hate-pdf-netlify-app-2026-01-06-13_43_11.png" alt="IHatePDF web tool" loading="lazy" />
+              </picture>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">Web Tool</span><span class="tag">SaaS</span></div>
+              <h3>IHatePDF</h3>
+              <p>A utility-first web app built around one job: make PDF conversion painless. Zero friction from landing to task completion.</p>
+              <p class="portfolio-item__result">High task completion rate with a clean, scannable interface that earns repeat visits.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View IHatePDF project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 4. Lwosocia — Social Platform -->
+          <article class="portfolio-item" data-reveal data-category="authority">
+            <div class="portfolio-item__media">
+              <picture>
+                <source srcset="Works/optimized/screencapture-lwosocial-ng-2026-05-30-13_53_19.webp" type="image/webp" />
+                <img src="Works/screencapture-lwosocial-ng-2026-05-30-13_53_19.png" alt="Lwosocia social platform website" loading="lazy" />
+              </picture>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">Social Platform</span><span class="tag">Community</span></div>
+              <h3>Lwosocia</h3>
+              <p>Web presence for a Nigerian social platform focused on community and connection. Built for scale, speed, and mobile-first engagement in a market where data efficiency matters.</p>
+              <p class="portfolio-item__result">A platform that looks credible enough to attract early adopters and investors.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View Lwosocia project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 5. EduCore — School Portal -->
+          <article class="portfolio-item" data-reveal data-delay="60" data-category="school">
+            <div class="portfolio-item__media">
+              <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#1e3a5f 0%,#0a1628 100%);" aria-hidden="true">
+                <span style="position:relative;z-index:1;">EduCore</span>
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0.15;font-family:monospace;font-size:11px;letter-spacing:0.1em;color:#7eb3e8;z-index:0;padding:20px;white-space:pre;overflow:hidden;">
+                  ┌─ Students: 847 ──────────────┐&#10;│ ☑ Attendance  ☑ Results      │&#10;│ ☑ Timetable   ☑ Payments     │&#10;└──────────────────────────────┘
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">EdTech</span><span class="tag">School Portal</span></div>
+              <h3>EduCore School Portal</h3>
+              <p>A comprehensive school management portal for a private secondary school in Lagos. Student records, attendance, result sheets, and parent communication — unified in one system.</p>
+              <p class="portfolio-item__result">Reduced administrative overhead by replacing paper-based processes with a live digital system.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View EduCore project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 6. Crest.ng — Ecommerce -->
+          <article class="portfolio-item" data-reveal data-delay="120" data-category="ecommerce">
+            <div class="portfolio-item__media">
+              <picture>
+                <source srcset="Works/optimized/screencapture-crestdotng.webp" type="image/webp" />
+                <img src="Works/screencapture-crestdotng.png" alt="Crest.ng ecommerce storefront" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'portfolio-placeholder\' style=\'background:linear-gradient(135deg,#2d1b4e 0%,#1a0f2e 100%);\' aria-hidden=\'true\'><span style=\'position:relative;z-index:1;\'>Crest.ng</span></div>'" />
+              </picture>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">Ecommerce</span><span class="tag">Consumer Products</span></div>
+              <h3>Crest.ng</h3>
+              <p>E-commerce storefront for a Nigerian consumer goods brand expanding their online presence. Designed to compete with established players while maintaining a distinctly local brand voice.</p>
+              <p class="portfolio-item__result">A professional storefront that positioned Crest.ng for digital-first growth.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View Crest.ng project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 7. MarketMind — B2B SaaS -->
+          <article class="portfolio-item" data-reveal data-category="tool">
+            <div class="portfolio-item__media">
+              <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0d2137 0%,#071420 100%);" aria-hidden="true">
+                <span style="position:relative;z-index:1;">MarketMind</span>
+                <div style="position:absolute;bottom:20px;left:20px;right:20px;z-index:1;display:flex;gap:8px;align-items:flex-end;">
+                  <div style="flex:1;background:rgba(201,168,76,0.6);border-radius:3px 3px 0 0;height:40px;"></div>
+                  <div style="flex:1;background:rgba(201,168,76,0.4);border-radius:3px 3px 0 0;height:65px;"></div>
+                  <div style="flex:1;background:rgba(201,168,76,0.7);border-radius:3px 3px 0 0;height:50px;"></div>
+                  <div style="flex:1;background:rgba(201,168,76,0.5);border-radius:3px 3px 0 0;height:80px;"></div>
+                  <div style="flex:1;background:rgba(201,168,76,0.9);border-radius:3px 3px 0 0;height:95px;"></div>
+                  <div style="flex:1;background:rgba(201,168,76,0.6);border-radius:3px 3px 0 0;height:55px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">B2B SaaS</span><span class="tag">Analytics</span></div>
+              <h3>MarketMind</h3>
+              <p>A marketing analytics dashboard built for a growth-stage startup tracking campaign ROI across multiple channels. Clean data visualization with a focus on decision-making speed.</p>
+              <p class="portfolio-item__result">Founders could finally see which channels were actually working — without exporting spreadsheets.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View MarketMind project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 8. The Readers' Table — Blog -->
+          <article class="portfolio-item" data-reveal data-delay="60" data-category="blog">
+            <div class="portfolio-item__media">
+              <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#2c1810 0%,#1a0e08 100%);" aria-hidden="true">
+                <span style="position:relative;z-index:1;font-size:clamp(16px,2vw,22px);">The Readers'<br>Table</span>
+                <div style="position:absolute;top:20px;right:20px;width:60px;height:80px;background:rgba(201,168,76,0.3);border-radius:3px;z-index:1;"></div>
+                <div style="position:absolute;top:28px;right:28px;width:60px;height:80px;background:rgba(201,168,76,0.2);border-radius:3px;z-index:0;"></div>
+              </div>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">Blog</span><span class="tag">Publishing</span></div>
+              <h3>The Readers' Table</h3>
+              <p>A premium editorial blog platform for a book review and literary commentary publication. The design needed to feel like a magazine — immersive, legible, beautiful on any screen.</p>
+              <p class="portfolio-item__result">A reading experience that kept visitors engaged longer and drove newsletter subscriptions.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View The Readers' Table project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 9. NaijaGigs — Job Board -->
+          <article class="portfolio-item" data-reveal data-delay="120" data-category="tool">
+            <div class="portfolio-item__media">
+              <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0a2618 0%,#061610 100%);" aria-hidden="true">
+                <span style="position:relative;z-index:1;">NaijaGigs</span>
+                <div style="position:absolute;inset:0;padding:16px 20px;display:flex;flex-direction:column;justify-content:flex-end;gap:8px;z-index:1;">
+                  <div style="background:rgba(255,255,255,0.08);border-radius:6px;height:28px;width:90%;"></div>
+                  <div style="background:rgba(255,255,255,0.06);border-radius:6px;height:28px;width:75%;"></div>
+                  <div style="background:rgba(255,255,255,0.05);border-radius:6px;height:28px;width:82%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">Job Board</span><span class="tag">Marketplace</span></div>
+              <h3>NaijaGigs</h3>
+              <p>A job listing and gig marketplace connecting Nigerian freelancers and SMEs. Clean search UX, category-based discovery, and a mobile-first application flow.</p>
+              <p class="portfolio-item__result">A platform that feels fast and trustworthy — critical for marketplace adoption.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View NaijaGigs project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 10. Coachlane — Coaching -->
+          <article class="portfolio-item" data-reveal data-category="authority">
+            <div class="portfolio-item__media">
+              <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#3d2400 0%,#261700 100%);" aria-hidden="true">
+                <span style="position:relative;z-index:1;">Coachlane</span>
+                <div style="position:absolute;bottom:20px;left:50%;transform:translateX(-50%);z-index:1;text-align:center;">
+                  <div style="width:40px;height:40px;border-radius:50%;background:rgba(201,168,76,0.4);margin:0 auto 8px;"></div>
+                  <div style="width:80px;height:8px;background:rgba(255,255,255,0.15);border-radius:4px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">Coaching</span><span class="tag">Personal Development</span></div>
+              <h3>Coachlane</h3>
+              <p>Authority website for a life and business coach targeting mid-career professionals. Built to communicate credibility, warmth, and a clear path to booking a session.</p>
+              <p class="portfolio-item__result">Discovery-to-inquiry conversion improved with a focused CTA structure and visible proof points.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View Coachlane project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 11. Fitness Landing Page — Service -->
+          <article class="portfolio-item" data-reveal data-delay="60" data-category="service">
+            <div class="portfolio-item__media">
+              <picture>
+                <source srcset="Works/optimized/screencapture-demo-phlox-pro-gym-2026-06-25-15_02_34.webp" type="image/webp" />
+                <img src="Works/screencapture-demo-phlox-pro-gym-2026-06-25-15_02_34.png" alt="Fitness landing page" loading="lazy" />
+              </picture>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">Service</span><span class="tag">Lead Gen</span></div>
+              <h3>Fitness Landing Page</h3>
+              <p>High-energy campaign landing page for a fitness brand driving memberships for a new gym location. One objective: get the visitor to book a free trial class.</p>
+              <p class="portfolio-item__result">Clean conversion path with urgency signals and mobile-first layout for local search traffic.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View Fitness Landing Page project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 12. Angelo's Fraud Detector — AI/ML -->
+          <article class="portfolio-item" data-reveal data-delay="120" data-category="ai-ml">
+            <div class="portfolio-item__media">
+              <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#0a0f1a 0%,#050810 100%);" aria-hidden="true">
+                <span style="position:relative;z-index:1;font-size:clamp(14px,1.8vw,20px);">Fraud<br>Detector</span>
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:flex-end;padding:20px;z-index:1;">
+                  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:4px;width:120px;">
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#ef4444;border-radius:2px;"></div>
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#ef4444;border-radius:2px;"></div>
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#f59e0b;border-radius:2px;"></div>
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#10b981;border-radius:2px;"></div>
+                    <div style="height:4px;background:#ef4444;border-radius:2px;"></div>
+                  </div>
+                </div>
+                <div style="position:absolute;bottom:16px;left:20px;right:20px;z-index:1;">
+                  <div style="font-family:monospace;font-size:10px;color:rgba(16,185,129,0.8);line-height:1.6;">
+                    AUPRC: 0.903 · F1: 0.881<br>
+                    XGBoost + RF + LogReg ensemble
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">AI / ML</span><span class="tag">Computer Science</span></div>
+              <h3>Angelo's Fraud Detector</h3>
+              <p>A production-ready ML system for real-time credit card fraud detection using a stacking ensemble of Logistic Regression, Random Forest, and XGBoost with a Streamlit dashboard.</p>
+              <p class="portfolio-item__result">AUPRC 0.903, F1 0.881. Demonstrated that machine learning can catch fraud patterns humans miss, in production, in real time.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View Fraud Detector project">View Project →</a>
+            </div>
+          </article>
+
+          <!-- 13. Template System — Product -->
+          <article class="portfolio-item" data-reveal data-category="tool">
+            <div class="portfolio-item__media">
+              <picture>
+                <source srcset="Works/optimized/screencapture-templates-animation-addons-prodo-2026-05-15-15_54_01.webp" type="image/webp" />
+                <img src="Works/screencapture-templates-animation-addons-prodo-2026-05-15-15_54_01.png" alt="Template system and animation addons" loading="lazy" />
+              </picture>
+            </div>
+            <div class="portfolio-item__body">
+              <div class="work-card__meta"><span class="tag">Product</span><span class="tag">Animation</span></div>
+              <h3>Template System &amp; Animation Addons</h3>
+              <p>Visual product presentation system for a template marketplace. Motion-ready interface components with clear pricing tiers and interactive previews.</p>
+              <p class="portfolio-item__result">Higher template discovery and purchase intent through a polished, scannable product experience.</p>
+              <a class="portfolio-item__link" href="#" aria-label="View Template System project">View Project →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
     <section class="section">
       <div class="container">
         <div class="cta" data-reveal>
-          <p class="eyebrow">Your project can be next</p>
-          <h2>Let your website prove the quality of your business.</h2>
-          <p>Share your goals, audience, and current challenge. I will help you map the clearest path from website visit to business opportunity.</p>
+          <p class="eyebrow">Start your project</p>
+          <h2>Your site could be next.</h2>
+          <p>Every project starts with a conversation. Tell us about your business and what you need your website to do — we'll take it from there.</p>
           <div class="cta__actions">
-            <a class="btn btn--primary" href="contact.html">Start a Project</a>
-            <a class="btn btn--ghost" href="index.html">Back Home</a>
+            <a class="btn btn--primary" href="contact.html">Book a Discovery Call</a>
+            <a class="btn btn--ghost" href="about.html">About Angelo</a>
           </div>
         </div>
       </div>
@@ -146,7 +362,13 @@
         <span class="brand__mark">W<span class="brand__dot"></span></span>
         <span class="brand__text">THE WEB MAVEN</span>
       </a>
-      <p>© <span data-year></span> The Web Maven. Websites designed for growth.</p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>© <span data-year></span> The Web Maven. Strategic websites that build trust, generate opportunities, and support business growth.</p>
     </div>
   </footer>
 
