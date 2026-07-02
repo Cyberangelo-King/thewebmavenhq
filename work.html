@@ -1,25 +1,49 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Security Headers -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; form-action 'none'; base-uri 'self';" />
   <meta http-equiv="X-Frame-Options" content="DENY" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()" />
-  <title>Work | The Web Maven</title>
-  <meta name="description" content="Portfolio of strategic web design projects by The Web Maven — ecommerce, authority sites, SaaS, AI/ML applications, and more." />
-  <meta property="og:title" content="Work | The Web Maven" />
-  <meta property="og:description" content="Real builds with real business intent — 12+ projects spanning ecommerce, authority brands, SaaS, and AI/ML." />
-  <meta property="og:type" content="website" />
+
+  <!-- SEO: Title & Description -->
+  <title>Web Design Portfolio | SaaS &amp; MVP Projects | The Web Maven</title>
+  <meta name="description" content="Portfolio of web design and development projects by The Web Maven — SaaS platforms, client portals, AI/ML tools, ecommerce, and authority sites for startups and founders.">
+  <meta name="robots" content="index, follow">
+
+  <!-- SEO: Canonical -->
+  <link rel="canonical" href="https://thewebmavenhq.com/work.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thewebmavenhq.com/work.html">
+  <meta property="og:title" content="Web Design Portfolio | SaaS &amp; MVP Projects | The Web Maven">
+  <meta property="og:description" content="Real builds with real business intent — 12+ projects spanning SaaS tools, authority brands, ecommerce, and AI/ML.">
+  <meta property="og:image" content="https://thewebmavenhq.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="The Web Maven">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Web Design Portfolio | SaaS &amp; MVP Projects | The Web Maven">
+  <meta name="twitter:description" content="Real builds with real business intent — SaaS tools, ecommerce, authority sites, AI/ML.">
+  <meta name="twitter:image" content="https://thewebmavenhq.com/assets/og-image.jpg">
+
+  <!-- Fonts & Assets -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;650;750;850;900&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="animations.css" />
+  <meta name="theme-color" content="#0A0E1A">
 </head>
 <body>
   <nav class="nav" aria-label="Main navigation">
@@ -51,7 +75,7 @@
         <div>
           <p class="eyebrow" data-reveal>Selected work</p>
           <h1 data-reveal data-delay="80">Real builds.<br>Real intent.</h1>
-          <p class="lead" data-reveal data-delay="150">Every project starts with a business problem, not a Figma file. These are the sites we've built, the problems we solved, and the results that followed.</p>
+          <p class="lead" data-reveal data-delay="150">Every project starts with a business problem, not a Figma file. These are the sites we&#39;ve built, the problems we solved, and the results that followed.</p>
           <div class="filter-bar" role="group" aria-label="Filter projects by category">
             <button class="filter-btn active" data-filter="all" type="button">All</button>
             <button class="filter-btn" data-filter="ecommerce" type="button">Ecommerce</button>
@@ -66,7 +90,7 @@
         <div data-reveal data-delay="200">
           <div class="proof-pill">
             <strong>13</strong>
-            <span>Projects shipped — ecommerce, authority, SaaS, and AI/ML</span>
+            <span>Projects shipped &#8212; ecommerce, authority, SaaS, and AI/ML</span>
           </div>
           <div class="proof-pill" style="margin-top:12px;">
             <strong>Global</strong>
@@ -80,12 +104,12 @@
       <div class="container">
         <div class="portfolio-grid" id="portfolio-grid">
 
-          <!-- 1. Ayaba Store — Ecommerce -->
+          <!-- 1. Ayaba Store – Ecommerce -->
           <article class="portfolio-item" data-reveal data-category="ecommerce">
             <div class="portfolio-item__media">
               <picture>
                 <source srcset="Works/optimized/screencapture-ayaba-store-local-2025-03-15-15_00_53.webp" type="image/webp" />
-                <img src="Works/screencapture-ayaba-store-local-2025-03-15-15_00_53.png" alt="Ayaba Store ecommerce website" loading="lazy" />
+                <img src="Works/screencapture-ayaba-store-local-2025-03-15-15_00_53.png" alt="Ayaba Store ecommerce website — mobile-first fashion retail shopping experience" loading="lazy" />
               </picture>
             </div>
             <div class="portfolio-item__body">
@@ -97,12 +121,12 @@
             </div>
           </article>
 
-          <!-- 2. Dumbiri Cletus — Authority -->
+          <!-- 2. Dumbiri Cletus – Authority -->
           <article class="portfolio-item" data-reveal data-delay="60" data-category="authority">
             <div class="portfolio-item__media">
               <picture>
                 <source srcset="Works/optimized/screencapture-dumbiricletus-netlify-app-2026-06-06-03_39_31.webp" type="image/webp" />
-                <img src="Works/screencapture-dumbiricletus-netlify-app-2026-06-06-03_39_31.png" alt="Dumbiri Cletus authority website" loading="lazy" />
+                <img src="Works/screencapture-dumbiricletus-netlify-app-2026-06-06-03_39_31.png" alt="Dumbiri Cletus authority personal brand website — professional services credibility platform" loading="lazy" />
               </picture>
             </div>
             <div class="portfolio-item__body">
@@ -114,12 +138,12 @@
             </div>
           </article>
 
-          <!-- 3. IHatePDF — Tool -->
+          <!-- 3. IHatePDF – Tool -->
           <article class="portfolio-item" data-reveal data-delay="120" data-category="tool">
             <div class="portfolio-item__media">
               <picture>
                 <source srcset="Works/optimized/screencapture-i-hate-pdf-netlify-app-2026-01-06-13_43_11.webp" type="image/webp" />
-                <img src="Works/screencapture-i-hate-pdf-netlify-app-2026-01-06-13_43_11.png" alt="IHatePDF web tool" loading="lazy" />
+                <img src="Works/screencapture-i-hate-pdf-netlify-app-2026-01-06-13_43_11.png" alt="IHatePDF web tool — PDF conversion SaaS application landing page" loading="lazy" />
               </picture>
             </div>
             <div class="portfolio-item__body">
@@ -131,12 +155,12 @@
             </div>
           </article>
 
-          <!-- 4. Lwosocia — Social Platform -->
+          <!-- 4. Lwosocia – Social Platform -->
           <article class="portfolio-item" data-reveal data-category="authority">
             <div class="portfolio-item__media">
               <picture>
                 <source srcset="Works/optimized/screencapture-lwosocia-ng-2026-05-30-13_53_19.webp" type="image/webp" />
-                <img src="Works/screencapture-lwosocia-ng-2026-05-30-13_53_19.png" alt="Lwosocia social platform website" loading="lazy" />
+                <img src="Works/screencapture-lwosocia-ng-2026-05-30-13_53_19.png" alt="Lwosocia Nigerian social platform website — community and connection mobile-first" loading="lazy" />
               </picture>
             </div>
             <div class="portfolio-item__body">
@@ -148,7 +172,7 @@
             </div>
           </article>
 
-          <!-- 5. EduCore — School Portal -->
+          <!-- 5. EduCore – School Portal -->
           <article class="portfolio-item" data-reveal data-delay="60" data-category="school">
             <div class="portfolio-item__media">
               <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#1e3a5f 0%,#0a1628 100%);" aria-hidden="true">
@@ -158,13 +182,13 @@
             <div class="portfolio-item__body">
               <div class="work-card__meta"><span class="tag">EdTech</span><span class="tag">School Portal</span></div>
               <h3>EduCore School Portal</h3>
-              <p>A comprehensive school management portal for a private secondary school in Lagos. Student records, attendance, result sheets, and parent communication — unified in one system.</p>
+              <p>A comprehensive school management portal for a private secondary school in Lagos. Student records, attendance, result sheets, and parent communication &#8212; unified in one system.</p>
               <p class="portfolio-item__result">Reduced administrative overhead by replacing paper-based processes with a live digital system.</p>
               <a class="portfolio-item__link" href="#" aria-label="View EduCore project">View Project &#8594;</a>
             </div>
           </article>
 
-          <!-- 6. Crest.ng — Ecommerce -->
+          <!-- 6. Crest.ng – Ecommerce -->
           <article class="portfolio-item" data-reveal data-delay="120" data-category="ecommerce">
             <div class="portfolio-item__media">
               <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#2d1b4e 0%,#1a0f2e 100%);" aria-hidden="true">
@@ -180,12 +204,12 @@
             </div>
           </article>
 
-          <!-- 7. Fitness Landing Page — Service -->
+          <!-- 7. Fitness Landing Page – Service -->
           <article class="portfolio-item" data-reveal data-delay="60" data-category="service">
             <div class="portfolio-item__media">
               <picture>
                 <source srcset="Works/optimized/screencapture-demo-phlox-pro-gym-2026-06-25-15_02_34.webp" type="image/webp" />
-                <img src="Works/screencapture-demo-phlox-pro-gym-2026-06-25-15_02_34.png" alt="Fitness landing page" loading="lazy" />
+                <img src="Works/screencapture-demo-phlox-pro-gym-2026-06-25-15_02_34.png" alt="Fitness gym landing page screenshot — local service lead generation conversion page" loading="lazy" />
               </picture>
             </div>
             <div class="portfolio-item__body">
@@ -197,12 +221,12 @@
             </div>
           </article>
 
-          <!-- 8. Template System — Product -->
+          <!-- 8. Template System – Product -->
           <article class="portfolio-item" data-reveal data-category="tool">
             <div class="portfolio-item__media">
               <picture>
                 <source srcset="Works/optimized/screencapture-templates-animation-addons-prodo-2026-05-15-15_54_01.webp" type="image/webp" />
-                <img src="Works/screencapture-templates-animation-addons-prodo-2026-05-15-15_54_01.png" alt="Template system and animation addons" loading="lazy" />
+                <img src="Works/screencapture-templates-animation-addons-prodo-2026-05-15-15_54_01.png" alt="Template system and animation addons product website screenshot" loading="lazy" />
               </picture>
             </div>
             <div class="portfolio-item__body">
@@ -224,7 +248,7 @@
         <div class="cta" data-reveal>
           <p class="eyebrow">Start your project</p>
           <h2>Your site could be next.</h2>
-          <p>Every project starts with a conversation. Tell us about your business and what you need your website to do — we'll take it from there.</p>
+          <p>Every project starts with a conversation. Tell us about your business and what you need your website to do &#8212; we&#39;ll take it from there.</p>
           <div class="cta__actions">
             <a class="btn btn--primary" href="contact.html">Book a Discovery Call</a>
             <a class="btn btn--ghost" href="about.html">About Angelo</a>
@@ -249,6 +273,9 @@
         <a href="terms-of-service.html">Terms</a>
         <a href="cookie-policy.html">Cookies</a>
       </nav>
+      <p>The Web Maven &mdash; Full-Stack Development &amp; AI Agency<br>
+      Serving founders in Canada, UK, US, and Nigeria<br>
+      Email: <a href="mailto:faithakinboyejoa@gmail.com">faithakinboyejoa@gmail.com</a></p>
       <p>&copy; <span data-year></span> The Web Maven. Strategic websites that build trust, generate opportunities, and support business growth.</p>
     </div>
   </footer>

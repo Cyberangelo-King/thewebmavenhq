@@ -1,25 +1,80 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Security Headers -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; form-action 'none'; base-uri 'self';" />
   <meta http-equiv="X-Frame-Options" content="DENY" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()" />
-  <title>About Angelo | The Web Maven</title>
-  <meta name="description" content="Meet Angelo — computer scientist, web designer, and the obsessive mind behind The Web Maven. Based in Lagos, working globally." />
-  <meta property="og:title" content="About Angelo | The Web Maven" />
-  <meta property="og:description" content="The story behind The Web Maven — strategy-first web design from Lagos, Nigeria." />
-  <meta property="og:type" content="website" />
+
+  <!-- SEO: Title & Description -->
+  <title>About Faith Akinola Boyejo — Full-Stack &amp; AI Developer | The Web Maven</title>
+  <meta name="description" content="Faith Akinola Boyejo is a full-stack developer and AI/ML specialist behind The Web Maven. Building SaaS platforms for startup founders in Canada, UK, US, and Nigeria.">
+  <meta name="robots" content="index, follow">
+
+  <!-- SEO: Canonical -->
+  <link rel="canonical" href="https://thewebmavenhq.com/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thewebmavenhq.com/about.html">
+  <meta property="og:title" content="About Faith Akinola Boyejo — Full-Stack &amp; AI Developer | The Web Maven">
+  <meta property="og:description" content="Faith Akinola Boyejo is the full-stack developer and AI/ML specialist behind The Web Maven — building SaaS platforms for startup founders globally.">
+  <meta property="og:image" content="https://thewebmavenhq.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="The Web Maven">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Faith Akinola Boyejo | The Web Maven">
+  <meta name="twitter:description" content="Full-stack developer and AI/ML specialist. Building SaaS platforms for startup founders in Canada, UK, US, and Nigeria.">
+  <meta name="twitter:image" content="https://thewebmavenhq.com/assets/og-image.jpg">
+
+  <!-- JSON-LD: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Faith Akinola Boyejo",
+    "alternateName": "Angelo",
+    "jobTitle": "Full-Stack Developer & AI/ML Specialist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "The Web Maven",
+      "url": "https://thewebmavenhq.com"
+    },
+    "url": "https://thewebmavenhq.com/about.html",
+    "email": "faithakinboyejoa@gmail.com",
+    "knowsAbout": [
+      "Full-Stack Web Development",
+      "Machine Learning",
+      "Artificial Intelligence",
+      "SaaS Development",
+      "React",
+      "Node.js",
+      "Python"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/faithakinolaboyejo",
+      "https://github.com/Cyberangelo-King"
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Assets -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;650;750;850;900&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="animations.css" />
+  <meta name="theme-color" content="#0A0E1A">
 </head>
 <body>
   <nav class="nav" aria-label="Main navigation">
@@ -46,14 +101,14 @@
   </nav>
 
   <main>
-    <!-- ── HERO ─────────────────────────────────────────────────────────── -->
+    <!-- ── HERO ── -->
     <section class="about-hero">
       <div class="container about-hero__grid">
         <div class="about-hero__copy">
           <p class="eyebrow" data-reveal>The obsessive behind the work</p>
-          <h1 class="about-headline" data-reveal data-delay="80">Built Different.<br>By Design.</h1>
+          <h1 class="about-headline" data-reveal data-delay="80">Faith Akinola Boyejo — Full-Stack Developer &amp; AI/ML Specialist</h1>
           <p class="lead" data-reveal data-delay="180" style="max-width:62ch; margin-top:24px;">
-            Every business deserves a powerful, paying digital presence. The Web Maven delivers solutions that don't just look good — they work. Strategy first. Then design.
+            Every business deserves a powerful, paying digital presence. The Web Maven delivers SaaS platforms and web products that don&#39;t just look good &#8212; they work. Strategy first. Then design.
           </p>
 
           <div style="margin-top:36px;" data-reveal data-delay="260">
@@ -70,17 +125,17 @@
 
         <div class="about-portrait" data-reveal data-delay="200">
           <div class="about-portrait__frame">
-            <img src="angelo-profile.jpg" alt="Angelo — Faith Akinola Boyejoa, founder of The Web Maven" />
+            <img src="angelo-profile.jpg" alt="Faith Akinola Boyejo, founder of The Web Maven — full-stack developer and AI/ML specialist" />
           </div>
           <div class="about-portrait__badge">
             <strong>Faith Akinola Boyejo</strong>
-            <span>Angelo · Founder &amp; Lead Designer</span>
+            <span>Angelo &middot; Founder &amp; Lead Developer</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── STORY ──────────────────────────────────────────────────────────── -->
+    <!-- ── STORY ── -->
     <section class="section section--tight">
       <div class="container about-story">
         <div class="about-story__text">
@@ -91,21 +146,26 @@
             Angelo grew up surrounded by computers. That early immersion gave him a deep, intuitive understanding of digital and analogue systems before most people knew what they were dealing with.
           </p>
           <p data-reveal data-delay="160">
-            In 2019, he came across a website for a business — it was shabby, non-interactive, not driving traffic, barely functional. Just <em>existing</em>. He reached out to the owners cold and offered to build them something better. He did. That moment changed everything.
+            In 2019, he came across a website for a business &#8212; it was shabby, non-interactive, not driving traffic, barely functional. Just <em>existing</em>. He reached out to the owners cold and offered to build them something better. He did. That moment changed everything.
           </p>
           <p data-reveal data-delay="190">
-            Fast-forward: Angelo is now a <strong>computer scientist</strong> with a body of work spanning AI &amp; machine learning, web development, data science, and automation. He and his team operate under <strong>The Web Maven</strong> brand — and the emphasis is always on <em>web</em>. Not just design. Not just code. A full digital presence that actually performs.
+            Fast-forward: Angelo is now a <strong>computer scientist</strong> with a body of work spanning AI &amp; machine learning, web development, data science, and automation. He and his team operate under <strong>The Web Maven</strong> brand &#8212; and the emphasis is always on <em>web</em>. Not just design. Not just code. A full digital presence that actually performs.
           </p>
 
           <blockquote style="margin:36px 0; padding:24px; border-left:3px solid var(--brand-gold); background:var(--surface-card); border-radius:0 var(--radius-md) var(--radius-md) 0;" data-reveal data-delay="220">
             <p style="font-family:var(--font-heading); font-size:clamp(18px,2.2vw,24px); font-style:italic; color:var(--heading-color); opacity:1; line-height:1.4; max-width:none;">
-              "Every business deserves a powerful, paying digital presence."
+              &#8220;Every business deserves a powerful, paying digital presence.&#8221;
             </p>
           </blockquote>
 
           <p data-reveal data-delay="250">
-            Based in <strong>Lagos, Nigeria</strong> — but the reach is global. Current and past clients in Canada, the UK, and the United States. Their systems and processes give them the edge to work seamlessly with clients anywhere on the planet.
+            Based in <strong>Lagos, Nigeria</strong> &#8212; but the reach is global. Current and past clients in Canada, the UK, and the United States. Their systems and processes give them the edge to work seamlessly with clients anywhere on the planet.
           </p>
+
+          <div style="margin-top:32px;" data-reveal data-delay="280">
+            <a class="btn btn--primary" href="contact.html">Get In Touch</a>
+            <a class="btn btn--ghost" href="work.html" style="margin-left:12px;">View Services</a>
+          </div>
         </div>
 
         <aside class="about-sidebar">
@@ -125,31 +185,31 @@
             <div class="skills-grid">
               <div class="skill-card" data-reveal>
                 <div class="skill-card__icon" aria-hidden="true">&#10731;</div>
-                <h4>Strategic Web Design &amp; UX</h4>
-                <p>Conversion-focused sites built around real business goals.</p>
+                <h4>SaaS &amp; Web App Development</h4>
+                <p>Production-ready SaaS platforms and web applications built for scale.</p>
               </div>
               <div class="skill-card" data-reveal data-delay="60">
                 <div class="skill-card__icon" aria-hidden="true">&#9736;</div>
                 <h4>AI &amp; Machine Learning</h4>
-                <p>Production ML systems — fraud detection, classification, forecasting.</p>
+                <p>Production ML systems &#8212; fraud detection, classification, forecasting.</p>
               </div>
               <div class="skill-card" data-reveal data-delay="80">
-                <div class="skill-card__icon" aria-hidden="true">&#9675;</div>
+                <div class="skill-card__icon" aria-hidden="true">&#9651;</div>
                 <h4>Data Science &amp; Analytics</h4>
                 <p>Data-driven insights that inform product and business decisions.</p>
               </div>
               <div class="skill-card" data-reveal data-delay="100">
-                <div class="skill-card__icon" aria-hidden="true">&#10657;</div>
+                <div class="skill-card__icon" aria-hidden="true">&#10583;</div>
                 <h4>Full-Stack Development</h4>
-                <p>End-to-end engineering — front end, back end, and everything between.</p>
+                <p>End-to-end engineering &#8212; front end, back end, and everything between.</p>
               </div>
               <div class="skill-card" data-reveal data-delay="120">
-                <div class="skill-card__icon" aria-hidden="true">&#10571;</div>
+                <div class="skill-card__icon" aria-hidden="true">&#10547;</div>
                 <h4>Automation &amp; Systems</h4>
                 <p>Workflows and integrations that replace manual overhead.</p>
               </div>
               <div class="skill-card" data-reveal data-delay="140">
-                <div class="skill-card__icon" aria-hidden="true">&#9678;</div>
+                <div class="skill-card__icon" aria-hidden="true">&#9670;</div>
                 <h4>Brand Identity &amp; Positioning</h4>
                 <p>Visual and verbal identity that makes the right first impression.</p>
               </div>
@@ -159,14 +219,14 @@
       </div>
     </section>
 
-    <!-- ── PHILOSOPHY ──────────────────────────────────────────────────────── -->
+    <!-- ── PHILOSOPHY ── -->
     <section class="section section--tight" style="background:var(--surface-2);">
       <div class="container">
         <div style="max-width:820px; margin-inline:auto; text-align:center;" data-reveal>
           <p class="eyebrow" style="justify-content:center;">The philosophy</p>
           <h2 style="margin-top:18px; font-size:clamp(30px,5vw,60px);">Not just design. Not just code. Results.</h2>
           <p class="lead" style="margin-top:24px; max-width:640px; margin-inline:auto;">
-            The Web Maven's approach starts with one question: <em>what should this site actually do for the business?</em> Every layout, every headline, every CTA is in service of that answer — not in service of looking impressive in a portfolio.
+            The Web Maven&#39;s approach starts with one question: <em>what should this site actually do for the business?</em> Every layout, every headline, every CTA is in service of that answer &#8212; not in service of looking impressive in a portfolio.
           </p>
         </div>
 
@@ -175,7 +235,7 @@
             <span class="insight__icon" style="margin-bottom:14px;" aria-hidden="true">01</span>
             <div>
               <h3 style="font-size:20px;">Strategy First</h3>
-              <p style="margin-top:10px;">No designer picks a font before understanding who the customer is and what they need to hear. We don't either.</p>
+              <p style="margin-top:10px;">No designer picks a font before understanding who the customer is and what they need to hear. We don&#39;t either.</p>
             </div>
           </div>
           <div class="insight" style="flex-direction:column; align-items:flex-start;" data-reveal data-delay="80">
@@ -189,22 +249,22 @@
             <span class="insight__icon" style="margin-bottom:14px;" aria-hidden="true">03</span>
             <div>
               <h3 style="font-size:20px;">Outcomes, Always</h3>
-              <p style="margin-top:10px;">The measure of a successful project isn't how it looks at launch — it's what it does for the business 6 months later.</p>
+              <p style="margin-top:10px;">The measure of a successful project isn&#39;t how it looks at launch &#8212; it&#39;s what it does for the business 6 months later.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── CTA ──────────────────────────────────────────────────────────── -->
+    <!-- ── CTA ── -->
     <section class="section about-cta-section">
       <div class="container">
         <div class="cta" data-reveal>
           <p class="eyebrow">Ready to work together?</p>
-          <h2>Let's build something.</h2>
-          <p>Whether you need a full digital presence, a focused landing page, or a complete brand identity — bring the brief. We'll figure out the rest.</p>
+          <h2>Let&#39;s build something.</h2>
+          <p>Whether you need a full SaaS platform, an MVP, or a focused web product &#8212; bring the brief. We&#39;ll figure out the rest.</p>
           <div class="cta__actions">
-            <a class="btn btn--primary" href="contact.html">Let's Build Something</a>
+            <a class="btn btn--primary" href="contact.html">Let&#39;s Build Something</a>
             <a class="btn btn--ghost" href="work.html">See the Work First</a>
           </div>
         </div>
@@ -227,6 +287,9 @@
         <a href="terms-of-service.html">Terms</a>
         <a href="cookie-policy.html">Cookies</a>
       </nav>
+      <p>The Web Maven &mdash; Full-Stack Development &amp; AI Agency<br>
+      Serving founders in Canada, UK, US, and Nigeria<br>
+      Email: <a href="mailto:faithakinboyejoa@gmail.com">faithakinboyejoa@gmail.com</a></p>
       <p>&copy; <span data-year></span> The Web Maven. Strategic websites that build trust, generate opportunities, and support business growth.</p>
     </div>
   </footer>
