@@ -10,32 +10,48 @@
   <meta name="robots" content="index, follow">
 
   <!-- SEO: Canonical -->
-  <link rel="canonical" href="https://thewebmavenhq.com/work.html">
+  <link rel="canonical" href="https://thewebmavenhq.com/work.html" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://thewebmavenhq.com/work.html">
-  <meta property="og:title" content="Portfolio — SaaS, MVP &amp; Web Projects | The Web Maven">
-  <meta property="og:description" content="See the products we've built: SaaS platforms, MVPs, ecommerce stores, and automation systems for startups across 4 countries.">
-  <meta property="og:image" content="https://thewebmavenhq.com/assets/og-image.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thewebmavenhq.com/work.html" />
+  <meta property="og:title" content="Portfolio — SaaS, MVP &amp; Web Projects | The Web Maven" />
+  <meta property="og:description" content="See the products we've built: SaaS platforms, MVPs, ecommerce stores, and automation systems for startups across 4 countries." />
+  <meta property="og:image" content="https://thewebmavenhq.com/assets/og-image.jpg" />
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="The Web Maven">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Portfolio — SaaS, MVP &amp; Web Projects | The Web Maven">
-  <meta name="twitter:description" content="See the products we've built: SaaS platforms, MVPs, ecommerce stores, and automation systems for startups across 4 countries.">
-  <meta name="twitter:image" content="https://thewebmavenhq.com/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio — SaaS, MVP &amp; Web Projects | The Web Maven" />
+  <meta name="twitter:description" content="See the products we've built: SaaS platforms, MVPs, ecommerce stores, and automation systems for startups across 4 countries." />
+  <meta name="twitter:image" content="https://thewebmavenhq.com/assets/og-image.jpg" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Portfolio — The Web Maven",
+    "url": "https://thewebmavenhq.com/work.html",
+    "description": "A selection of SaaS platforms, MVPs, ecommerce stores, and automation systems built for startups.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Web Maven",
+      "url": "https://thewebmavenhq.com"
+    }
+  }
+  </script>
 
   <!-- Fonts & Assets -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;650;750;850;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
-  <meta name="theme-color" content="#0A0E1A">
+  <meta name="theme-color" content="#0a0d14">
 </head>
 <body>
   <nav class="nav" aria-label="Main navigation">
@@ -45,16 +61,13 @@
     </a>
     <div class="nav__links" id="site-menu">
       <a href="index.html">Home</a>
-      <a class="active" href="work.html" aria-current="page">Work</a>
       <a href="about.html">About</a>
+      <a class="active" href="work.html" aria-current="page">Work</a>
+      <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </div>
     <div class="nav__actions">
-      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
-        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-      <a class="btn btn--primary nav-cta" href="https://wa.me/2348079617768?text=Hi%20Angelo%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">Start a Project</a>
+      <a class="btn btn--primary nav-cta" href="contact.html">Start a Project &#8594;</a>
       <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-menu">
         <span></span><span></span><span></span>
       </button>
@@ -62,189 +75,155 @@
   </nav>
 
   <main>
-    <section class="page-hero">
-      <div class="container page-hero__grid">
-        <div>
-          <p class="eyebrow" data-reveal>Selected work</p>
-          <h1 data-reveal data-delay="80">Real builds.<br>Real intent.</h1>
-          <p class="lead" data-reveal data-delay="150">Every project starts with a business problem, not a Figma file. These are the sites we&#39;ve built, the problems we solved, and the results that followed.</p>
-          <div class="filter-bar" role="group" aria-label="Filter projects by category" data-reveal data-delay="200">
-            <button class="filter-btn active" data-filter="all" type="button">All</button>
-            <button class="filter-btn" data-filter="ecommerce" type="button">Ecommerce</button>
-            <button class="filter-btn" data-filter="authority" type="button">Authority</button>
-            <button class="filter-btn" data-filter="tool" type="button">Tool / SaaS</button>
-            <button class="filter-btn" data-filter="blog" type="button">Blog</button>
-            <button class="filter-btn" data-filter="ai-ml" type="button">AI / ML</button>
-            <button class="filter-btn" data-filter="school" type="button">School Portal</button>
-            <button class="filter-btn" data-filter="service" type="button">Service</button>
-          </div>
-        </div>
-        <div data-reveal data-delay="200">
-          <div class="proof-pill">
-            <strong>13</strong>
-            <span>Projects shipped &#8212; ecommerce, authority, SaaS, and AI/ML</span>
-          </div>
-          <div class="proof-pill" style="margin-top:12px;">
-            <strong>Global</strong>
-            <span>Clients in Nigeria, Canada, UK &amp; the United States</span>
-          </div>
+    <!-- PAGE HERO -->
+    <section class="page-hero work-page-hero">
+      <div class="container">
+        <p class="eyebrow">Selected work</p>
+        <h1>Products Built to Perform</h1>
+        <p class="lead">A selection of projects across SaaS, ecommerce, automation, and AI/ML.</p>
+
+        <!-- FILTER BAR -->
+        <div class="filter-bar" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="saas" type="button">SaaS</button>
+          <button class="filter-btn" data-filter="mvp" type="button">MVP</button>
+          <button class="filter-btn" data-filter="web" type="button">Web</button>
+          <button class="filter-btn" data-filter="ecommerce" type="button">Ecommerce</button>
+          <button class="filter-btn" data-filter="automation" type="button">Automation</button>
+          <button class="filter-btn" data-filter="ai-ml" type="button">AI/ML</button>
         </div>
       </div>
     </section>
 
-    <section class="section section--tight">
+    <!-- PROJECTS GRID -->
+    <section class="section section--portfolio">
       <div class="container">
         <div class="portfolio-grid" id="portfolio-grid">
 
-          <!-- 1. Ayaba Store — Ecommerce -->
-          <article class="portfolio-item" data-reveal data-category="ecommerce">
-            <div class="portfolio-item__media">
-              <picture>
-                <source srcset="Works/optimized/screencapture-ayaba-store-local-2025-03-15-15_00_53.webp" type="image/webp" />
-                <img src="Works/screencapture-ayaba-store-local-2025-03-15-15_00_53.png" alt="Ayaba Store ecommerce website &#8212; mobile-first fashion retail shopping experience" loading="lazy" />
-              </picture>
-            </div>
+          <!-- Project 1: UK Logistics Dispatch Platform -->
+          <article class="portfolio-item animate-on-scroll" data-category="saas automation">
+            <div class="portfolio-item__media portfolio-item__media--gradient portfolio-gradient--1" aria-hidden="true"></div>
             <div class="portfolio-item__body">
-              <div class="work-card__meta"><span class="tag">Ecommerce</span><span class="tag">Retail</span></div>
-              <h3>Ayaba Store</h3>
-              <p>Full e-commerce platform for a fashion retail brand. Mobile-first buying experience with product discovery, trust signals, and a streamlined checkout path.</p>
-              <p class="portfolio-item__result">Clearer buying journey and stronger product presentation led to improved add-to-cart rates.</p>
-              <a class="portfolio-item__link" href="#" aria-label="View Ayaba Store project">View Project &#8594;</a>
+              <div class="portfolio-outcome">60% reduction in manual operations time</div>
+              <h3>UK Logistics Dispatch Platform</h3>
+              <p>End-to-end SaaS platform with ML-driven dispatching and automated workflow engine for a UK-based logistics startup.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">React</span>
+                <span class="tag">ML</span>
+              </div>
             </div>
           </article>
 
-          <!-- 2. Dumbiri Cletus — Authority -->
-          <article class="portfolio-item" data-reveal data-delay="60" data-category="authority">
-            <div class="portfolio-item__media">
-              <picture>
-                <source srcset="Works/optimized/screencapture-dumbiricletu&#8203;s-netlify-app-2026-06-06-03_39_31.webp" type="image/webp" />
-                <img src="Works/screencapture-dumbiricletu&#8203;s-netlify-app-2026-06-06-03_39_31.png" alt="Dumbiri Cletus authority personal brand website &#8212; professional services credibility platform" loading="lazy" />
-              </picture>
-            </div>
+          <!-- Project 2: EduCore -->
+          <article class="portfolio-item animate-on-scroll" data-category="saas web">
+            <div class="portfolio-item__media portfolio-item__media--gradient portfolio-gradient--2" aria-hidden="true"></div>
             <div class="portfolio-item__body">
-              <div class="work-card__meta"><span class="tag">Authority</span><span class="tag">Personal Brand</span></div>
-              <h3>Dumbiri Cletus</h3>
-              <p>Credibility-first digital platform for a personal brand in professional services. Built to make expertise immediately visible and memorable to high-value clients.</p>
-              <p class="portfolio-item__result">Professional positioning that supports speaking, consulting, and partnership inquiries.</p>
-              <a class="portfolio-item__link" href="#" aria-label="View Dumbiri Cletus project">View Project &#8594;</a>
+              <div class="portfolio-outcome">Full school operations on one platform</div>
+              <h3>EduCore — School Management Portal</h3>
+              <p>Student records, attendance, fee collection, and teacher management — all in a single unified system.</p>
+              <div class="portfolio-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
             </div>
           </article>
 
-          <!-- 3. IHatePDF — Tool -->
-          <article class="portfolio-item" data-reveal data-delay="120" data-category="tool">
-            <div class="portfolio-item__media">
-              <picture>
-                <source srcset="Works/optimized/screencapture-i-hate-pdf-netlify-app-2026-01-06-13_43_11.webp" type="image/webp" />
-                <img src="Works/screencapture-i-hate-pdf-netlify-app-2026-01-06-13_43_11.png" alt="IHatePDF web tool &#8212; PDF conversion SaaS application landing page" loading="lazy" />
-              </picture>
-            </div>
+          <!-- Project 3: MarketMind -->
+          <article class="portfolio-item animate-on-scroll" data-category="saas ai-ml">
+            <div class="portfolio-item__media portfolio-item__media--gradient portfolio-gradient--3" aria-hidden="true"></div>
             <div class="portfolio-item__body">
-              <div class="work-card__meta"><span class="tag">Web Tool</span><span class="tag">SaaS</span></div>
+              <div class="portfolio-outcome">AI-powered market intelligence tool</div>
+              <h3>MarketMind</h3>
+              <p>SaaS product that aggregates and analyzes market data to surface competitor insights for product teams.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Python</span>
+                <span class="tag">OpenAI</span>
+                <span class="tag">React</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: The Readers' Table -->
+          <article class="portfolio-item animate-on-scroll" data-category="web">
+            <div class="portfolio-item__media portfolio-item__media--gradient portfolio-gradient--4" aria-hidden="true"></div>
+            <div class="portfolio-item__body">
+              <div class="portfolio-outcome">High-traffic content platform</div>
+              <h3>The Readers' Table</h3>
+              <p>Editorial blog platform with custom CMS, SEO architecture, and newsletter integration.</p>
+              <div class="portfolio-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: NaijaGigs -->
+          <article class="portfolio-item animate-on-scroll" data-category="ecommerce web">
+            <div class="portfolio-item__media portfolio-item__media--gradient portfolio-gradient--5" aria-hidden="true"></div>
+            <div class="portfolio-item__body">
+              <div class="portfolio-outcome">Freelance marketplace for the Nigerian market</div>
+              <h3>NaijaGigs</h3>
+              <p>Full marketplace with gig listings, payment integration, and dispute resolution workflow.</p>
+              <div class="portfolio-tags">
+                <span class="tag">React</span>
+                <span class="tag">Stripe</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Coachlane -->
+          <article class="portfolio-item animate-on-scroll" data-category="saas web">
+            <div class="portfolio-item__media portfolio-item__media--gradient portfolio-gradient--6" aria-hidden="true"></div>
+            <div class="portfolio-item__body">
+              <div class="portfolio-outcome">Client management platform for coaches</div>
+              <h3>Coachlane</h3>
+              <p>Booking, session notes, payment tracking, and progress monitoring for independent coaches.</p>
+              <div class="portfolio-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Stripe</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: ML Fraud Detection -->
+          <article class="portfolio-item animate-on-scroll" data-category="ai-ml">
+            <div class="portfolio-item__media portfolio-item__media--gradient portfolio-gradient--7" aria-hidden="true"></div>
+            <div class="portfolio-item__body">
+              <div class="portfolio-outcome">AUPRC 0.903, F1 0.881 on credit card fraud</div>
+              <h3>ML Fraud Detection System</h3>
+              <p>Stacking ensemble model (LR, Random Forest, XGBoost) for real-time credit card fraud detection.</p>
+              <div class="portfolio-tags">
+                <span class="tag">Python</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">XGBoost</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: IHatePDF -->
+          <article class="portfolio-item animate-on-scroll" data-category="web saas">
+            <div class="portfolio-item__media portfolio-item__media--gradient portfolio-gradient--8" aria-hidden="true"></div>
+            <div class="portfolio-item__body">
+              <div class="portfolio-outcome">Free PDF toolkit used by thousands</div>
               <h3>IHatePDF</h3>
-              <p>A utility-first web app built around one job: make PDF conversion painless. Zero friction from landing to task completion.</p>
-              <p class="portfolio-item__result">High task completion rate with a clean, scannable interface that earns repeat visits.</p>
-              <a class="portfolio-item__link" href="#" aria-label="View IHatePDF project">View Project &#8594;</a>
-            </div>
-          </article>
-
-          <!-- 4. Lwosocial — Social Platform -->
-          <article class="portfolio-item" data-reveal data-category="authority">
-            <div class="portfolio-item__media">
-              <picture>
-                <source srcset="Works/optimized/screencapture-lwosocial-ng-2026-05-30-13_53_19.webp" type="image/webp" />
-                <img src="Works/screencapture-lwosocial-ng-2026-05-30-13_53_19.png" alt="Lwosocial Nigerian social platform website &#8212; community and connection mobile-first" loading="lazy" />
-              </picture>
-            </div>
-            <div class="portfolio-item__body">
-              <div class="work-card__meta"><span class="tag">Social Platform</span><span class="tag">Community</span></div>
-              <h3>Lwosocial</h3>
-              <p>Web presence for a Nigerian social platform focused on community and connection. Built for scale, speed, and mobile-first engagement in a market where data efficiency matters.</p>
-              <p class="portfolio-item__result">A platform that looks credible enough to attract early adopters and investors.</p>
-              <a class="portfolio-item__link" href="#" aria-label="View Lwosocial project">View Project &#8594;</a>
-            </div>
-          </article>
-
-          <!-- 5. EduCore — School Portal -->
-          <article class="portfolio-item" data-reveal data-delay="60" data-category="school">
-            <div class="portfolio-item__media">
-              <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#1e3a5f 0%,#0a1628 100%);" aria-hidden="true">
-                <span style="position:relative;z-index:1;">EduCore</span>
+              <p>Browser-based PDF utilities: compress, convert, merge, split — no upload limit, no sign-up.</p>
+              <div class="portfolio-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
               </div>
             </div>
-            <div class="portfolio-item__body">
-              <div class="work-card__meta"><span class="tag">EdTech</span><span class="tag">School Portal</span></div>
-              <h3>EduCore School Portal</h3>
-              <p>A comprehensive school management portal for a private secondary school in Lagos. Student records, attendance, result sheets, and parent communication &#8212; unified in one system.</p>
-              <p class="portfolio-item__result">Reduced administrative overhead by replacing paper-based processes with a live digital system.</p>
-              <a class="portfolio-item__link" href="#" aria-label="View EduCore project">View Project &#8594;</a>
-            </div>
           </article>
 
-          <!-- 6. Crest.ng — Ecommerce -->
-          <article class="portfolio-item" data-reveal data-delay="120" data-category="ecommerce">
-            <div class="portfolio-item__media">
-              <div class="portfolio-placeholder" style="background:linear-gradient(135deg,#2d1b4e 0%,#1a0f2e 100%);" aria-hidden="true">
-                <span style="position:relative;z-index:1;">Crest.ng</span>
-              </div>
-            </div>
-            <div class="portfolio-item__body">
-              <div class="work-card__meta"><span class="tag">Ecommerce</span><span class="tag">Consumer Products</span></div>
-              <h3>Crest.ng</h3>
-              <p>E-commerce storefront for a Nigerian consumer goods brand expanding their online presence. Designed to compete with established players while maintaining a distinctly local brand voice.</p>
-              <p class="portfolio-item__result">A professional storefront that positioned Crest.ng for digital-first growth.</p>
-              <a class="portfolio-item__link" href="#" aria-label="View Crest.ng project">View Project &#8594;</a>
-            </div>
-          </article>
+        </div><!-- /portfolio-grid -->
 
-          <!-- 7. Fitness Landing Page — Service -->
-          <article class="portfolio-item" data-reveal data-delay="60" data-category="service">
-            <div class="portfolio-item__media">
-              <picture>
-                <source srcset="Works/optimized/screencapture-demo-phlox-pro-gym-2026-06-25-15_02_34.webp" type="image/webp" />
-                <img src="Works/screencapture-demo-phlox-pro-gym-2026-06-25-15_02_34.png" alt="Fitness gym landing page screenshot &#8212; local service lead generation conversion page" loading="lazy" />
-              </picture>
-            </div>
-            <div class="portfolio-item__body">
-              <div class="work-card__meta"><span class="tag">Service</span><span class="tag">Lead Gen</span></div>
-              <h3>Fitness Landing Page</h3>
-              <p>High-energy campaign landing page for a fitness brand driving memberships for a new gym location. One objective: get the visitor to book a free trial class.</p>
-              <p class="portfolio-item__result">Clean conversion path with urgency signals and mobile-first layout for local search traffic.</p>
-              <a class="portfolio-item__link" href="#" aria-label="View Fitness Landing Page project">View Project &#8594;</a>
-            </div>
-          </article>
-
-          <!-- 8. Template System — Product -->
-          <article class="portfolio-item" data-reveal data-category="tool">
-            <div class="portfolio-item__media">
-              <picture>
-                <source srcset="Works/optimized/screencapture-templates-animation-addons-prodo-2026-05-15-15_54_01.webp" type="image/webp" />
-                <img src="Works/screencapture-templates-animation-addons-prodo-2026-05-15-15_54_01.png" alt="Template system and animation addons product website screenshot" loading="lazy" />
-              </picture>
-            </div>
-            <div class="portfolio-item__body">
-              <div class="work-card__meta"><span class="tag">Product</span><span class="tag">Animation</span></div>
-              <h3>Template System &amp; Animation Addons</h3>
-              <p>Visual product presentation system for a template marketplace. Motion-ready interface components with clear pricing tiers and interactive previews.</p>
-              <p class="portfolio-item__result">Higher template discovery and purchase intent through a polished, scannable product experience.</p>
-              <a class="portfolio-item__link" href="#" aria-label="View Template System project">View Project &#8594;</a>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section">
-      <div class="container">
-        <div class="cta" data-reveal>
-          <p class="eyebrow">Start your project</p>
-          <h2>Your site could be next.</h2>
-          <p>Every project starts with a conversation. Tell us about your business and what you need your website to do &#8212; we&#39;ll take it from there.</p>
-          <div class="cta__actions">
-            <a class="btn btn--primary btn--lg" href="contact.html">Book a Discovery Call</a>
-            <a class="btn btn--ghost" href="about.html">About Angelo</a>
-          </div>
+        <!-- Bottom CTA -->
+        <div class="work-bottom-cta animate-on-scroll">
+          <p>Have a project in mind? <a href="contact.html" class="work-cta-link">&#8594; Start a Conversation</a></p>
         </div>
       </div>
     </section>
@@ -258,20 +237,68 @@
       </a>
       <nav class="footer__links" aria-label="Footer navigation">
         <a href="index.html">Home</a>
-        <a href="work.html">Work</a>
         <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
         <a href="privacy-policy.html">Privacy</a>
         <a href="terms-of-service.html">Terms</a>
         <a href="cookie-policy.html">Cookies</a>
       </nav>
       <p>The Web Maven &mdash; Full-Stack Development &amp; AI Agency<br>
-      Serving founders in Canada, UK, US, and Nigeria<br>
+      Lagos, Nigeria &middot; Global clients<br>
       Email: <a href="mailto:faithakinboyejoa@gmail.com">faithakinboyejoa@gmail.com</a></p>
-      <p>&copy; <span data-year></span> The Web Maven. Strategic websites that build trust, generate opportunities, and support business growth.</p>
+      <p>&copy; <span data-year></span> The Web Maven. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="main.js" defer></script>
+  <!-- Mobile Sticky CTA Bar -->
+  <div class="sticky-cta-bar" id="sticky-cta-bar" aria-live="polite" role="complementary">
+    <a href="contact.html" class="sticky-cta-bar__link">Ready to build? &#8594; Start a Project</a>
+    <button class="sticky-cta-bar__close" aria-label="Close">&times;</button>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-btn" href="https://wa.me/2348079617768?text=Hi%20Angelo%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    <span class="whatsapp-btn__tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <script src="assets/enhancements.js" defer></script>
+
+  <!-- Portfolio filter — page-specific JS -->
+  <script defer>
+  (function () {
+    'use strict';
+    var filterBtns = document.querySelectorAll('.filter-btn');
+    var items = document.querySelectorAll('.portfolio-item');
+
+    if (!filterBtns.length || !items.length) return;
+
+    function setFilter(category) {
+      filterBtns.forEach(function (btn) {
+        btn.classList.toggle('active', btn.dataset.filter === category);
+      });
+
+      items.forEach(function (item) {
+        var cats = (item.dataset.category || '').split(' ');
+        var match = category === 'all' || cats.indexOf(category) !== -1;
+        if (match) {
+          item.removeAttribute('hidden');
+          item.style.display = '';
+        } else {
+          item.setAttribute('hidden', '');
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setFilter(btn.dataset.filter);
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
