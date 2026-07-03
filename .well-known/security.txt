@@ -1,8 +1,4 @@
 Contact: mailto:faithakinboyejoa@gmail.com
-Expires: 2027-01-01T00:00:00.000Z
+Expires: 2027-07-03T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://Cyberangelo-King.github.io/thewebmavenhq/.well-known/security.txt
-Policy: https://Cyberangelo-King.github.io/thewebmavenhq/privacy-policy.html
-
-# The Web Maven — security.txt per RFC 9116
-# If you discover a security vulnerability on this site, please report it to the contact above.
+Canonical: https://thewebmavenhq.com/.well-known/security.txt
