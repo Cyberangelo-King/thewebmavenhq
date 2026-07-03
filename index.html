@@ -65,10 +65,10 @@
   <!-- Fonts & Assets -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;650;750;850;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
-  <meta name="theme-color" content="#0A0E1A">
+  <meta name="theme-color" content="#0a0d14">
 </head>
 <body>
   <nav class="nav" aria-label="Main navigation">
@@ -78,16 +78,13 @@
     </a>
     <div class="nav__links" id="site-menu">
       <a class="active" href="index.html" aria-current="page">Home</a>
-      <a href="work.html">Work</a>
       <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Services</a>
       <a href="contact.html">Contact</a>
     </div>
     <div class="nav__actions">
-      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
-        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-      <a class="btn btn--primary nav-cta" href="https://wa.me/2348079617768?text=Hi%20Angelo%2C%20I%27d%20like%20to%20book%20a%20discovery%20call." target="_blank" rel="noopener noreferrer">Book a Call</a>
+      <a class="btn btn--primary nav-cta" href="contact.html">Start a Project →</a>
       <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-menu">
         <span></span><span></span><span></span>
       </button>
@@ -96,246 +93,228 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="hero-section">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="eyebrow" data-reveal>SaaS &amp; MVP Development for Startups</p>
-          <h1 data-reveal data-delay="80">
-            We ship <span>production-ready</span> products. Not templates.
-          </h1>
-          <p class="lead" data-reveal data-delay="150">
-            The Web Maven helps startup founders, CTOs, and product managers ship production-ready SaaS platforms and MVPs &#8212; with full-stack engineering and embedded AI/ML expertise built in from day one. We design and build web apps that generate real opportunities.
-          </p>
-          <div class="hero__actions" data-reveal data-delay="260">
-            <a class="btn btn--primary btn--lg" href="contact.html">Start Your Project</a>
-            <a class="btn btn--ghost btn--lg" href="work.html">See What We Built</a>
+          <div class="hero__badge animate-on-scroll">
+            <span class="badge-pulse"></span>
+            🚀 Available for Projects
           </div>
-          <div class="hero__proof" data-reveal data-delay="360" aria-label="The Web Maven focus areas">
-            <div class="proof-pill"><strong>4</strong><span>Website systems built around business goals</span></div>
-            <div class="proof-pill"><strong>24h</strong><span>Direct WhatsApp response window</span></div>
-            <div class="proof-pill"><strong>AA</strong><span>Accessible, mobile-first build standard</span></div>
+          <h1 class="animate-on-scroll">We Build Digital Products That Actually Work</h1>
+          <p class="hero__sub animate-on-scroll">SaaS platforms. MVPs. Automation systems. Built for startups that need results, not just a pretty website.</p>
+          <div class="hero__actions animate-on-scroll">
+            <a class="btn btn--primary btn--lg" href="contact.html">Start a Project →</a>
+            <a class="btn btn--ghost btn--lg" href="work.html">See Our Work</a>
           </div>
         </div>
-
-        <div class="hero-showcase" aria-label="Selected website previews">
-          <div class="screen-stack">
-            <figure class="screen-card screen-card--one">
-              <picture>
-                <source srcset="Works/optimized/screencapture-lwosocial-ng-2026-05-30-13_53_19.webp" type="image/webp" />
-                <img src="Works/screencapture-lwosocial-ng-2026-05-30-13_53_19.png" alt="Lwosocial social platform SaaS website screenshot" loading="eager" />
-              </picture>
-            </figure>
-            <figure class="screen-card screen-card--two">
-              <picture>
-                <source srcset="Works/optimized/screencapture-idyllic-conkies-fa1ed9-netlify-app-2026-05-29-17_06_39.webp" type="image/webp" />
-                <img src="Works/screencapture-idyllic-conkies-fa1ed9-netlify-app-2026-05-29-17_06_39.png" alt="Client landing page website preview" loading="lazy" />
-              </picture>
-            </figure>
-          </div>
-          <div class="metric-float" data-reveal data-delay="520">
-            <strong>Strategy first.</strong>
-            <span>Design second. Outcomes always.</span>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero-grid-canvas">
+            <div class="grid-lines"></div>
+            <div class="grid-glow"></div>
+            <div class="floating-card floating-card--1">
+              <span class="fc-dot fc-dot--green"></span>
+              <span>SaaS Platform Deployed</span>
+            </div>
+            <div class="floating-card floating-card--2">
+              <span class="fc-dot fc-dot--gold"></span>
+              <span>MVP Live in 3 Weeks</span>
+            </div>
+            <div class="floating-card floating-card--3">
+              <span class="fc-dot fc-dot--blue"></span>
+              <span>60% Ops Reduction</span>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- TICKER -->
-    <div class="ticker-wrap" aria-hidden="true">
-      <div class="ticker">
-        <span>SaaS Platform Development</span>
-        <span>MVP Development</span>
-        <span>Client Portal Development</span>
-        <span>AI/ML Integration</span>
-        <span>Automation Workflows</span>
-        <span>Full-Stack Engineering</span>
-        <span>SaaS Platform Development</span>
-        <span>MVP Development</span>
-        <span>Client Portal Development</span>
-        <span>AI/ML Integration</span>
-        <span>Automation Workflows</span>
-        <span>Full-Stack Engineering</span>
-      </div>
-    </div>
-
-    <!-- PROBLEM SECTION -->
-    <section class="section section--tight">
-      <div class="container split">
-        <div class="statement" data-reveal>
-          <p class="eyebrow">Why most websites fail</p>
-          <h2>A beautiful website that does not generate business is still a bad investment.</h2>
-          <p class="lead">People do not buy because your website exists. They buy because they trust what they see, understand your value, and know exactly what to do next.</p>
-        </div>
-        <div class="insight-list">
-          <article class="insight" data-reveal>
-            <span class="insight__icon" aria-hidden="true">01</span>
-            <div>
-              <h3>Trust is unclear</h3>
-              <p>Your website must quickly answer why a customer should believe you, choose you, and take the next step.</p>
-            </div>
-          </article>
-          <article class="insight" data-reveal data-delay="80">
-            <span class="insight__icon" aria-hidden="true">02</span>
-            <div>
-              <h3>Messaging is generic</h3>
-              <p>Pretty pages fail when they do not communicate the difference between your business and every other option.</p>
-            </div>
-          </article>
-          <article class="insight" data-reveal data-delay="160">
-            <span class="insight__icon" aria-hidden="true">03</span>
-            <div>
-              <h3>The path is messy</h3>
-              <p>Conversion improves when visitors can scan, compare, decide, and contact you without friction.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section">
+      <!-- Proof Pills -->
       <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow" data-reveal>What makes the difference</p>
-            <h2 data-reveal data-delay="80">Services That Ship Real Products</h2>
-          </div>
-          <p class="lead" data-reveal data-delay="150">Before colors, layouts, or animations, we focus on positioning, customer psychology, conversion-focused UX, and trust-building content.</p>
+        <div class="proof-pills animate-on-scroll" aria-label="Key facts">
+          <div class="proof-pill">5+ Years Experience</div>
+          <div class="proof-pill">4 Countries</div>
+          <div class="proof-pill">60% Ops Reduction (UK Client)</div>
+          <div class="proof-pill">24h Response</div>
         </div>
+      </div>
+    </section>
 
-        <div class="service-grid">
-          <article class="service-card" data-reveal>
-            <span class="service-card__num" aria-hidden="true">01</span>
-            <h3>SaaS Platform Development</h3>
-            <p>Multi-tenant SaaS products built for scale. From architecture to deployment, with AI/ML features where they add real value.</p>
-            <a class="service-card__link" href="contact.html">Build your SaaS &#8594;</a>
+    <!-- SERVICES SNAPSHOT -->
+    <section class="section section--services">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <p class="eyebrow">What We Build</p>
+          <h2>Services Built for Scale</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card animate-on-scroll">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>SaaS Development</h3>
+            <p>End-to-end SaaS platforms built to scale</p>
+            <a class="service-card__link" href="contact.html">Learn more →</a>
           </article>
-          <article class="service-card" data-reveal data-delay="80">
-            <span class="service-card__num" aria-hidden="true">02</span>
+          <article class="service-card animate-on-scroll">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
             <h3>MVP Development</h3>
-            <p>Scoped tightly to ship a working product founders can validate &#8212; not spend months building everything at once.</p>
-            <a class="service-card__link" href="contact.html">Launch your MVP &#8594;</a>
+            <p>From idea to working product in weeks</p>
+            <a class="service-card__link" href="contact.html">Learn more →</a>
           </article>
-          <article class="service-card" data-reveal data-delay="160">
-            <span class="service-card__num" aria-hidden="true">03</span>
-            <h3>Client Portal Development</h3>
-            <p>Custom portals and internal tools for service businesses, agencies, and product teams needing structured client access.</p>
-            <a class="service-card__link" href="contact.html">Build a portal &#8594;</a>
-          </article>
-          <article class="service-card" data-reveal data-delay="240">
-            <span class="service-card__num" aria-hidden="true">04</span>
+          <article class="service-card animate-on-scroll">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg>
+            </div>
             <h3>AI/ML Integration</h3>
-            <p>Custom ML models, LLM APIs, and AI pipelines embedded directly into your web product or workflow.</p>
-            <a class="service-card__link" href="contact.html">Add AI to your product &#8594;</a>
+            <p>Add intelligence to your existing systems</p>
+            <a class="service-card__link" href="contact.html">Learn more →</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- SELECTED WORK -->
-    <section class="section section--tight">
+    <!-- STATS COUNTER -->
+    <section class="section section--stats stats-section">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow" data-reveal>Selected projects</p>
-            <h2 data-reveal data-delay="80">Real builds. Real business intent.</h2>
+        <div class="stats-grid">
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="13" data-suffix="+">0</span>
+            <span class="stat-label">Projects Delivered</span>
           </div>
-          <p class="lead" data-reveal data-delay="150">Every case study should feel like evidence, not decoration. These previews show the range: SaaS tools, authority platforms, landing pages, and AI-powered products.</p>
-        </div>
-
-        <div class="work-strip">
-          <article class="work-card work-card--large" data-reveal>
-            <div class="work-card__media">
-              <picture>
-                <source srcset="Works/optimized/screencapture-ayaba-store-local-2025-03-15-15_00_53.webp" type="image/webp" />
-                <img src="Works/screencapture-ayaba-store-local-2025-03-15-15_00_53.png" alt="Ayaba Store ecommerce website screenshot &#8212; mobile-first product browsing" loading="lazy" />
-              </picture>
-            </div>
-            <div class="work-card__body">
-              <div class="work-card__meta"><span class="tag">Ecommerce</span><span class="tag">Retail</span></div>
-              <h3>Ayaba Store</h3>
-              <p>A mobile-first store experience for product browsing, trust-building, and purchase intent.</p>
-              <div class="work-card__result">Outcome: clearer buying path and stronger product presentation.</div>
-            </div>
-          </article>
-          <article class="work-card work-card--large" data-reveal data-delay="120">
-            <div class="work-card__media">
-              <picture>
-                <source srcset="Works/optimized/screencapture-dumbiricletu&#8203;s-netlify-app-2026-06-06-03_39_31.webp" type="image/webp" />
-                <img src="Works/screencapture-dumbiricletu&#8203;s-netlify-app-2026-06-06-03_39_31.png" alt="Dumbiri Cletus authority website screenshot &#8212; personal brand platform" loading="lazy" />
-              </picture>
-            </div>
-            <div class="work-card__body">
-              <div class="work-card__meta"><span class="tag">Authority</span><span class="tag">Personal Brand</span></div>
-              <h3>Dumbiri Cletus</h3>
-              <p>A credibility-led platform for a personal brand, built to make expertise visible and memorable.</p>
-              <div class="work-card__result">Outcome: trust, positioning, and inquiry readiness.</div>
-            </div>
-          </article>
-          <article class="work-card" data-reveal>
-            <div class="work-card__media">
-              <picture>
-                <source srcset="Works/optimized/screencapture-i-hate-pdf-netlify-app-2026-01-06-13_43_11.webp" type="image/webp" />
-                <img src="Works/screencapture-i-hate-pdf-netlify-app-2026-01-06-13_43_11.png" alt="IHatePDF web tool SaaS dashboard screenshot" loading="lazy" />
-              </picture>
-            </div>
-            <div class="work-card__body">
-              <div class="work-card__meta"><span class="tag">Tool</span></div>
-              <h3>IHatePDF</h3>
-              <p>Utility-first web experience with a direct path to task completion.</p>
-            </div>
-          </article>
-          <article class="work-card" data-reveal data-delay="80">
-            <div class="work-card__media">
-              <picture>
-                <source srcset="Works/optimized/screencapture-demo-phlox-pro-gym-2026-06-25-15_02_34.webp" type="image/webp" />
-                <img src="Works/screencapture-demo-phlox-pro-gym-2026-06-25-15_02_34.png" alt="Gym fitness landing page screenshot &#8212; local service conversion" loading="lazy" />
-              </picture>
-            </div>
-            <div class="work-card__body">
-              <div class="work-card__meta"><span class="tag">Service</span></div>
-              <h3>Fitness Landing Page</h3>
-              <p>High-energy page structure for local service conversion.</p>
-            </div>
-          </article>
-        </div>
-
-        <div style="margin-top:40px; text-align:center;">
-          <a class="btn btn--ghost" href="work.html">View All Projects &#8594;</a>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-label">Countries Served</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="60" data-suffix="%">0</span>
+            <span class="stat-label">Avg Ops Time Saved</span>
+          </div>
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-number" data-target="24" data-suffix="h">0</span>
+            <span class="stat-label">Response Guarantee</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section class="section process">
+    <!-- CASE STUDY CALLOUT -->
+    <section class="section section--case-study">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow" data-reveal>How projects work</p>
-            <h2 data-reveal data-delay="80">Guided from strategy to launch.</h2>
-          </div>
-          <p class="lead" data-reveal data-delay="150">The experience should feel guided, never overwhelming. Every step answers a business question before it becomes a design decision.</p>
-        </div>
-        <div class="process-grid">
-          <article class="process-step" data-reveal><span aria-hidden="true">01</span><h3>Discover</h3><p>Goals, audience, offer, competition, constraints, and what success should look like.</p></article>
-          <article class="process-step" data-reveal data-delay="80"><span aria-hidden="true">02</span><h3>Position</h3><p>Messaging, page structure, trust signals, and the conversion journey.</p></article>
-          <article class="process-step" data-reveal data-delay="160"><span aria-hidden="true">03</span><h3>Build</h3><p>Responsive interface, performance-minded implementation, motion, forms, and integrations.</p></article>
-          <article class="process-step" data-reveal data-delay="240"><span aria-hidden="true">04</span><h3>Launch</h3><p>QA, accessibility pass, Netlify deployment readiness, and handoff for growth.</p></article>
+        <div class="case-study-card animate-on-scroll">
+          <div class="case-study-card__label">Featured Result</div>
+          <div class="case-study-card__client">UK Logistics Startup</div>
+          <h2 class="case-study-card__result">60% reduction in manual operations time</h2>
+          <p class="case-study-card__how">Automated workflows + ML-driven dispatching eliminated repetitive manual tasks, freeing the operations team to focus on growth.</p>
+          <a class="btn btn--primary" href="contact.html">Start a project like this →</a>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section">
+    <!-- TESTIMONIALS -->
+    <section class="section section--testimonials">
       <div class="container">
-        <div class="cta" data-reveal>
-          <p class="eyebrow">The real goal</p>
-          <h2>Your website should help your business grow.</h2>
-          <p>A high-performing SaaS platform or web product can increase qualified leads, improve conversion rates, build trust faster, strengthen positioning, and create opportunities around the clock.</p>
-          <div class="cta__actions">
-            <a class="btn btn--primary btn--lg" href="contact.html">Book a Discovery Call</a>
-            <a class="btn btn--ghost" href="work.html">Explore the Work</a>
+        <div class="section-header animate-on-scroll">
+          <p class="eyebrow">Client Feedback</p>
+          <h2>What Clients Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card animate-on-scroll">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote>
+              <p>"Angelo built our SaaS dispatch platform from scratch. The automation alone cut our ops team's manual work in half. Impressive technical depth."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-author__avatar" aria-hidden="true">JO</div>
+              <div>
+                <strong>James O.</strong>
+                <span>CTO, UK Logistics Startup</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card animate-on-scroll">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote>
+              <p>"Fast, precise, and actually understood what we were building. No hand-holding required."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-author__avatar" aria-hidden="true">CA</div>
+              <div>
+                <strong>Chidi A.</strong>
+                <span>Founder, MarketMind</span>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card animate-on-scroll">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote>
+              <p>"The Web Maven delivered our MVP in 3 weeks. We had our first paying user before we expected the project to even be done."</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-author__avatar" aria-hidden="true">SL</div>
+              <div>
+                <strong>Sarah L.</strong>
+                <span>Founder, EduCore</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY ANGELO -->
+    <section class="section section--why">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-copy animate-on-scroll">
+            <p class="eyebrow">Why The Web Maven</p>
+            <h2>Revenue-Focused, Not Just Beautiful</h2>
+            <p>Most agencies build what you ask for. We build what your business actually needs. Every technical decision is tied to a business outcome — conversion, retention, scalability, or speed to market.</p>
+            <p>Angelo has worked with founders across 4 countries to ship SaaS platforms, MVPs, and automation systems that create measurable results. No fluff, no hand-holding, no wasted sprints.</p>
+            <a class="btn btn--ghost" href="about.html">Learn more about Angelo →</a>
           </div>
+          <div class="why-right animate-on-scroll">
+            <div class="availability-card">
+              <span class="availability-dot"></span>
+              <div>
+                <strong>Live Availability</strong>
+                <span>Available for new projects</span>
+              </div>
+            </div>
+            <div class="tech-stack">
+              <p class="tech-stack__label">Tech Stack</p>
+              <div class="tech-badges">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">OpenAI</span>
+                <span class="tech-badge">AWS/GCP</span>
+                <span class="tech-badge">Stripe</span>
+                <span class="tech-badge">Supabase</span>
+                <span class="tech-badge">Vercel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section section--final-cta">
+      <div class="container">
+        <div class="final-cta animate-on-scroll">
+          <h2>Ready to Build Something Real?</h2>
+          <p>Most projects start with a 30-minute call. No pressure, no sales script.</p>
+          <a class="btn btn--primary btn--lg" href="contact.html">Start a Conversation</a>
         </div>
       </div>
     </section>
@@ -363,6 +342,19 @@
     </div>
   </footer>
 
+  <!-- Mobile Sticky CTA Bar -->
+  <div class="sticky-cta-bar" id="sticky-cta-bar" aria-live="polite" role="complementary">
+    <a href="contact.html" class="sticky-cta-bar__link">Ready to build? → Start a Project</a>
+    <button class="sticky-cta-bar__close" aria-label="Close">&times;</button>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-btn" href="https://wa.me/2348079617768?text=Hi%20Angelo%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    <span class="whatsapp-btn__tooltip">Chat on WhatsApp</span>
+  </a>
+
   <script src="main.js" defer></script>
+  <script src="assets/enhancements.js" defer></script>
 </body>
 </html>
